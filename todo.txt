@@ -1,0 +1,1 @@
+replace squrae bracket colors with react context color palette colors

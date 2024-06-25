@@ -15,11 +15,11 @@ function Header() {
 
             {/* nav bar on bigger screens */}
             <nav>
-                <ul className="md:flex flex-row justify-around gap-10 text-md hidden font-medium">
-                    <li><a href="#">Upcoming Features</a></li>
-                    <li><a href="#" onClick={dropdownHandler}>Tools</a>
+                <ul className="md:flex flex-row justify-around gap-10 text-md hidden font-medium text-[#2D2D2D]">
+                    <li><a href="#" className="hover:text-[#828282]">Upcoming Features</a></li>
+                    <li><a href="#" className="hover:text-[#828282]" onClick={dropdownHandler}>Tools</a>
                     </li>
-                    <li><a href="#">My Socials</a></li>
+                    <li><a href="#" className="hover:text-[#828282]" >My Socials</a></li>
                 </ul>
             </nav>
 
