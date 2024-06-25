@@ -1,1 +1,7 @@
 replace squrae bracket colors with react context color palette colors
+
+
+icon library
+https://heroicons.com/outline
+
+https://icons.getbootstrap.com/icons/list/
