@@ -1,4 +1,4 @@
-import logo from "../../assets/Logo.png";
+import logo from "../assets/Logo.png";
 
 function dropdownHandler() {
     console.log("dropdown menu dropped");

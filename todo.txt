@@ -1,5 +1,7 @@
 replace squrae bracket colors with react context color palette colors
 
+fetch now works but we need to put it on its seperate page and add ui that changes, potentially with useEffect or useState
+
 
 icon library
 https://heroicons.com/outline
