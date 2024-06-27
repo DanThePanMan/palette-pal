@@ -1,29 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
-import App from './App.jsx'
-import './index.css'
-import Header from './components/Header.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import CnR from "./components/CnR";
+import "./index.css";
+
 import "@fontsource-variable/inter"; // Defaults to wght axis
 
 
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+        <CnR/>
+    </React.StrictMode>
+);
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  // {
-  //   path: "profile",
-  //   element: <Profile />,
-  // },
-]);
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-     <Header/>
-     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
