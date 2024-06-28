@@ -13,11 +13,11 @@ function PaletteGenbtn(props) {
             const data = await response.json();
             const temp = data.result;
             setPalette({
-                "light shades": temp[0],
-                "light accent": temp[1],
-                "main brand": temp[2],
-                "dark accent": temp[3],
-                "dark shades": temp[4],
+                "lightShades": temp[0],
+                "lightAccent": temp[1],
+                "mainBrand": temp[2],
+                "darkAccent": temp[3],
+                "darkShades": temp[4],
             });
         } catch (error) {
             console.log("error"); //make this show a modal

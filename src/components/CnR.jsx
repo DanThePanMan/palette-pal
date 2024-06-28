@@ -8,11 +8,11 @@ const paletteContext = createContext();
 
 function CnR() {
     const [palette, setPalette] = useState({
-        "light shades": [255, 255, 255],
-        "light accent": [130, 130, 130],
-        "main brand": [45, 45, 45],
-        "dark accent": [237, 237, 237],
-        "dark shades": [45, 45, 45],
+        "lightShades": [255, 255, 255],
+        "lightAccent": [130, 130, 130],
+        "mainBrand": [45, 45, 45],
+        "darkAccent": [237, 237, 237],
+        "darkShades": [45, 45, 45],
     });
 
     return (
