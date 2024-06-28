@@ -33,7 +33,6 @@ function PaletteGenbtn(props) {
             >
                 Generate New
             </button>
-            <div>{JSON.stringify(palette)}</div>
         </>
     );
 }

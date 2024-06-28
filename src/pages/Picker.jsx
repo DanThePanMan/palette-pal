@@ -1,19 +1,21 @@
 import PaletteGenbtn from "../components/PaletteGenBtn";
 import Palette from "../components/Palette";
+import { useState } from "react";
 
 function App() {
-    const data = {
+    const [genParam, setGenparam] = useState({
         method: "POST",
         body: JSON.stringify({
             model: "default",
-            input: ["N", [90, 83, 82], "N", "N", "N"],
+            input: [[243,244,243], "N", "N", "N", "N"],
         }),
-    };
+    })
+
 
     return (
         <main className="flex flex-col justify-center items-center w-screen m-24 gap-24">
             <Palette></Palette>
-            <PaletteGenbtn params={data}></PaletteGenbtn>
+            <PaletteGenbtn params={genParam}></PaletteGenbtn>
         </main>
     );
 }

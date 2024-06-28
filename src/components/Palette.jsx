@@ -1,10 +1,11 @@
 import { paletteContext } from "./CnR";
 import { useContext } from "react";
 
-function classNameConverter(rgbArray){
-    let modifiedString = "bg-[rgb(45,144,144)] w-16 h-16"
-    console.log(modifiedString)
-    return modifiedString;
+
+function convertStyle(colorArray){
+    return({
+        backgroundColor:`rgb(${colorArray[0]}, ${colorArray[1]}, ${colorArray[2]})`
+    })
 }
 
 
@@ -12,12 +13,12 @@ function Palette(){
     const [palette, setPalette] = useContext(paletteContext);
 
     return(
-        <div className="w-[750px] h-[430px] bg-green-400 flex flex-row">
-            <div className={classNameConverter(palette.darkShades)}></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div className="w-[750px] h-[430px] bg-green-400 flex flex-row rounded-3xl overflow-clip border borde-[828282]">
+            <div className="w-[150px] h-[430px] transition-all ease-in-out" style={convertStyle(palette.lightShades)}></div>
+            <div className="w-[150px] h-[430px] transition-all ease-in-out" style={convertStyle(palette.lightAccent)}></div>
+            <div className="w-[150px] h-[430px] transition-all ease-in-out" style={convertStyle(palette.mainBrand)}></div>
+            <div className="w-[150px] h-[430px] transition-all ease-in-out" style={convertStyle(palette.darkAccent)}></div>
+            <div className="w-[150px] h-[430px] transition-all ease-in-out" style={convertStyle(palette.darkShades)}></div>
         </div>
     )
 }
