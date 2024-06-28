@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import Header from "./Header.jsx";
-import App from "../App.jsx";
+import Picker from "../pages/Picker.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
 
@@ -28,7 +28,7 @@ export{paletteContext};
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <Picker />,
     },
     // {
     //   path: "profile",

@@ -1,5 +1,5 @@
-import "./App.css";
-import PaletteGenbtn from "./components/PaletteGenBtn";
+import PaletteGenbtn from "../components/PaletteGenBtn";
+import Palette from "../components/Palette";
 
 function App() {
     const data = {
@@ -11,9 +11,10 @@ function App() {
     };
 
     return (
-        <>
+        <main className="flex flex-col justify-center items-center w-screen m-24 gap-24">
+            <Palette></Palette>
             <PaletteGenbtn params={data}></PaletteGenbtn>
-        </>
+        </main>
     );
 }
 
