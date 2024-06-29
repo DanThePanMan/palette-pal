@@ -2,8 +2,8 @@ import PaletteGenbtn from "../components/PaletteGenBtn";
 import Palette from "../components/Palette";
 import { useState } from "react";
 
-function App() {
-    const [genParam, setGenparam] = useState({
+function Picker() {
+    const [getParam, setParam] = useState({
         method: "POST",
         body: JSON.stringify({
             model: "default",
@@ -14,10 +14,10 @@ function App() {
 
     return (
         <main className="flex flex-col justify-center items-center w-screen m-24 gap-24">
-            <Palette></Palette>
-            <PaletteGenbtn params={genParam}></PaletteGenbtn>
+            <Palette getaParam = {getParam} setParam = {setParam}></Palette>
+            <PaletteGenbtn params={getParam}></PaletteGenbtn>
         </main>
     );
 }
 
-export default App;
+export default Picker;
