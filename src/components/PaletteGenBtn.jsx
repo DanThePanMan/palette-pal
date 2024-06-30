@@ -29,7 +29,7 @@ function PaletteGenbtn(props) {
         <>
             <ButtonNoColor
 
-            className="bg-"
+           
                 onClick={() => {
                     generateHandler(props.params);
                 }}
