@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { paletteContext } from "./CnR";
+import ButtonNoColor from "./ButtonNoColor";
 
 function PaletteGenbtn(props) {
     const [palette, setPalette] = useContext(paletteContext);
@@ -26,13 +27,15 @@ function PaletteGenbtn(props) {
 
     return (
         <>
-            <button
+            <ButtonNoColor
+
+            className="bg-"
                 onClick={() => {
                     generateHandler(props.params);
                 }}
+                text="Generate new"
             >
-                Generate New
-            </button>
+            </ButtonNoColor>
         </>
     );
 }

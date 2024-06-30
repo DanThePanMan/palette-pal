@@ -3,6 +3,7 @@ import Header from "./Header.jsx";
 import Picker from "../pages/Picker.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
+import Footer from "./Footer.jsx";
 
 const paletteContext = createContext();
 
@@ -19,6 +20,7 @@ function CnR() {
         <paletteContext.Provider value={[palette, setPalette]}>
             <Header />
             <RouterProvider router={router} />
+            <Footer/>
         </paletteContext.Provider>
     );
     
