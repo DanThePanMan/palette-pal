@@ -13,8 +13,8 @@ function Picker() {
 
 
     return (
-        <main className="flex flex-col justify-center items-center w-[100%] m-24 gap-24 h-[calc(100vh-24rem)]">
-            <h1 className="font-bold text-5xl">Palette Generator</h1>
+        <main className="flex flex-col justify-center items-center w-[100%] md:m-24 m-10 h-[60vh] gap-10 md:gap-24 md:h-[calc(100vh-24rem)]">
+            <h1 className="font-bold text-xl md:text-5xl ">Palette Generator</h1>
             <Palette getaParam = {getParam} setParam = {setParam}></Palette>
             <PaletteGenbtn params={getParam}></PaletteGenbtn>
         </main>
