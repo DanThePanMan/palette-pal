@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import Header from "./Header.jsx";
 import Picker from "../pages/Picker.jsx";
+import Landing from "../pages/Landing.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
 import Footer from "./Footer.jsx";
@@ -30,12 +31,12 @@ export{paletteContext};
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Picker />,
+        element: <Landing />,
     },
-    // {
-    //   path: "profile",
-    //   element: <Profile />,
-    // },
+    {
+      path: "picker",
+      element: <Picker />,
+    },
 ]);
 
 export default CnR;

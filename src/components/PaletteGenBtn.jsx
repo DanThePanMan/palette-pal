@@ -33,7 +33,7 @@ function PaletteGenbtn(props) {
                 onClick={() => {
                     generateHandler(props.params);
                 }}
-                text="Generate new"
+                text="Generate"
             >
             </ButtonNoColor>
         </>
