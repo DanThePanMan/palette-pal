@@ -1,4 +1,4 @@
-import { paletteContext } from "./CnR";
+import { paletteContext } from "../CnR";
 import { useContext } from "react";
 import { useState } from "react";
 import CopyNotif from "./CopyNotif";

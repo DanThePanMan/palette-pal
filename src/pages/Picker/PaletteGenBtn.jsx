@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { paletteContext } from "./CnR";
-import ButtonNoColor from "./ButtonNoColor";
+import { paletteContext } from "../CnR";
+import ButtonNoColor from "../../components/ButtonNoColor";
 
 function PaletteGenbtn(props) {
     const [palette, setPalette] = useContext(paletteContext);

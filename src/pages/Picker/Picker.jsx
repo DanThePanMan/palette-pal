@@ -1,7 +1,7 @@
-import PaletteGenbtn from "../components/PaletteGenBtn";
-import Palette from "../components/Palette";
+import PaletteGenbtn from "./PaletteGenBtn";
+import Palette from "./Palette";
 import { useState } from "react";
-import ButtonNoColor from "../components/ButtonNoColor";
+import ButtonNoColor from "../../components/ButtonNoColor";
 
 function Picker() {
     const [getParam, setParam] = useState({

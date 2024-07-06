@@ -1,10 +1,10 @@
 import { createContext } from "react";
-import Header from "./Header.jsx";
-import Picker from "../pages/Picker.jsx";
-import Landing from "../pages/Landing.jsx";
+import Header from "../components/Header.jsx";
+import Picker from "./Picker/Picker.jsx";
+import Landing from "./Landing/Landing.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
-import Footer from "./Footer.jsx";
+import Footer from "../components/Footer.jsx";
 
 const paletteContext = createContext();
 

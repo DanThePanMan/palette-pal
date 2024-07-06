@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import CnR from "./components/CnR";
+import CnR from "./pages/CnR";
 import "./index.css";
 
 import "@fontsource-variable/inter"; // Defaults to wght axis

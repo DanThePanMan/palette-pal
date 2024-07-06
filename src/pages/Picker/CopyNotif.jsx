@@ -9,7 +9,7 @@ function CopyNotif(props){
             console.log("test")
         }, 1000);
       }, []);    
-    return(<div className="absolute translate-y-48">Color Copied!</div>)
+    return(<div className="absolute translate-y-64">Color Copied!</div>)
 }
 
 export default CopyNotif

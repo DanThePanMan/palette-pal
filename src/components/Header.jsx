@@ -12,7 +12,7 @@ function Header() {
     return (
         <header className="Header flex flex-row justify-center items-center w-[100%] h-[calc(4rem+4px)] border-b-[828282] border">
         <div className="headerContent w-screen xl:w-[60vw] p-8 flex flex-row justify-between items-center">
-            <img src={logo} alt="Palette Pal Logo" className="logo h-10 w-auto md:h-14" />
+            <a href="/"><img src={logo} alt="Palette Pal Logo" className="logo h-10 w-auto md:h-14" /></a>
 
             {/* nav bar on bigger screens */}
             <nav>

@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className=" hidden md:flex flex-row justify-between items-center w-screen xl:w-[60vw] p-8 h-24">
+        <footer className=" hidden md:flex flex-row justify-between items-center w-screen xl:w-[60vw] p-8 h-32">
             <div className="left flex flex-row gap-5">
                 <a
                     href="https://www.linkedin.com/in/daniel-chen-195201261/"
