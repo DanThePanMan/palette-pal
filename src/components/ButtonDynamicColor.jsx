@@ -1,7 +1,7 @@
 function ButtonDynamicColor(props) {
     function convertStyle(code) {
         return {
-            backgroundColor: "#" + code,
+            backgroundColor: `#${code}`,
         };
     }
 
