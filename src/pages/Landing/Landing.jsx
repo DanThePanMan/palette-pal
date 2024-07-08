@@ -23,7 +23,6 @@ function Landing() {
             backgroundColor: `${code}`,
         };
     }
-    
 
     const paletteChangehandler = (colors) => {
         setDemoColors({
@@ -38,11 +37,16 @@ function Landing() {
     return (
         <>
             <div
+                className="h-32 w-[100%] mt-4 pb-4 transition-all ease-in-out"
+                style={{
+                    backgroundImage: `linear-gradient(to top, ${demoColors.lightShades}, white)`,
+                }}></div>
+            <div
                 className="w-[100%]"
                 style={convertStyleDiv(demoColors.lightShades)}>
-                <section className="flex flex-row items-center justify-center flex-grow-0 m-20 mt-32 gap-20">
+                <section className="flex flex-row items-center justify-center flex-grow-0 m-20 mt-12 gap-20">
                     <div className="flex flex-col gap-4">
-                        <LandingDemo colors={demoColors}/>
+                        <LandingDemo colors={demoColors} />
                         <div className="flex flex-row justify-between gap-5">
                             <PaletteDemoButton
                                 colors={{
@@ -132,7 +136,7 @@ function Landing() {
             <div
                 className="w-[100%] flex flex-row justify-center items-center"
                 style={convertStyleDiv(demoColors.lightShades)}>
-                <section className="highLights flex flex-col items-start w-[40vw] gap-20 m-48">
+                <section className="highLights flex flex-col items-start w-[40vw] gap-20 m-32">
                     <h1
                         className="Title font-bold text-5xl transition-all ease-in-out"
                         style={convertStyle(demoColors.darkShades)}>
@@ -238,9 +242,11 @@ function Landing() {
                     </div>
                 </section>
             </div>
-            <div className = "h-24 w-[100%] mb-4 transition-all ease-in-out" style={{
-                 backgroundImage: `linear-gradient(to bottom, ${demoColors.lightShades}, white)`,
-            }}></div>
+            <div
+                className="h-20 w-[100%] mb-4 transition-all ease-in-out"
+                style={{
+                    backgroundImage: `linear-gradient(to bottom, ${demoColors.lightShades}, white)`,
+                }}></div>
         </>
     );
 }
