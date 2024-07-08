@@ -1,5 +1,7 @@
 import logo from "../assets/Logo.png";
 
+//can remove
+
 function dropdownHandler() {
     console.log("dropdown menu dropped");
 }
