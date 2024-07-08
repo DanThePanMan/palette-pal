@@ -1,6 +1,7 @@
 import logo from "../assets/Logo.png";
 
 //can remove
+import lightLogo from "../assets/LightLogo.png"
 
 function dropdownHandler() {
     console.log("dropdown menu dropped");
@@ -12,23 +13,23 @@ function hamburgerHandler() {
 
 function Header() {
     return (
-        <header className="Header flex flex-row justify-center items-center w-[100%] h-[calc(4rem+4px)] border-b-[828282] border">
+        <header className="Header flex flex-row justify-center items-center w-[100%] h-[calc(4rem+4px)] bg-[#2D2D2D]">
         <div className="headerContent w-screen xl:w-[60vw] p-8 flex flex-row justify-between items-center">
-            <a href="/"><img src={logo} alt="Palette Pal Logo" className="logo h-10 w-auto md:h-14" /></a>
+            <a href="/"><img src={lightLogo} alt="Palette Pal Logo" className="logo h-10 w-auto md:h-14" /></a>
 
             {/* nav bar on bigger screens */}
             <nav>
                 <ul className="md:flex flex-row justify-around gap-10 text-md hidden font-medium text-[#2D2D2D]">
-                    <li><a href="#" className="hover:text-[#828282]">Upcoming Features</a></li>
-                    <li><a href="#" className="hover:text-[#828282]" onClick={dropdownHandler}>Tools</a>
+                    <li><a href="#" className="text-[#FFFFFF] hover:text-[#828282] transition-all ease-in-out">Upcoming Features</a></li>
+                    <li><a href="#" className="text-[#FFFFFF] hover:text-[#828282] transition-all ease-in-out" onClick={dropdownHandler}>Tools</a>
                     </li>
-                    <li><a href="#" className="hover:text-[#828282]" >My Socials</a></li>
+                    <li><a href="#" className="text-[#FFFFFF] hover:text-[#828282] transition-all ease-in-out" >My Socials</a></li>
                 </ul>
             </nav>
 
             {/* dynamic hamburgur menu on small screens  */}
             <div className="hamburgerMenu md:hidden"onClick={hamburgerHandler}>
-                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
             </div>

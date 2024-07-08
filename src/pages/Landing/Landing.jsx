@@ -23,9 +23,9 @@ function Landing() {
             backgroundColor: `${code}`,
         };
     }
+    
 
     const paletteChangehandler = (colors) => {
-        console.table(demoColors);
         setDemoColors({
             lightShades: colors.lightShades,
             lightAccent: colors.lightAccent,
@@ -38,12 +38,12 @@ function Landing() {
     return (
         <>
             <div
-                className="w-[100%] transition-all ease-in-out"
+                className="w-[100%]"
                 style={convertStyleDiv(demoColors.lightShades)}>
                 <section className="flex flex-row items-center justify-center flex-grow-0 m-20 mt-32 gap-20">
-                    <div>
-                        <LandingDemo />
-                        <div className="flex flex-row gap-4">
+                    <div className="flex flex-col gap-4">
+                        <LandingDemo colors={demoColors}/>
+                        <div className="flex flex-row justify-between gap-5">
                             <PaletteDemoButton
                                 colors={{
                                     lightShades: "#FFFFFF",
@@ -66,11 +66,11 @@ function Landing() {
                             />
                             <PaletteDemoButton
                                 colors={{
-                                    lightShades: "#F3EEF4",
-                                    lightAccent: "#E77D86",
-                                    mainBrand: "#477E86",
-                                    darkAccent: "#EDAD4C",
-                                    darkShades: "#889196",
+                                    lightShades: "#F9FAF9",
+                                    lightAccent: "#CCB3AA",
+                                    mainBrand: "#E13536",
+                                    darkAccent: "#BDA48A",
+                                    darkShades: "#2A3643",
                                 }}
                                 stateManager={paletteChangehandler}
                             />
@@ -130,9 +130,9 @@ function Landing() {
                 </section>
             </div>
             <div
-                className="w-[100%] transition-all ease-in-out flex flex-row justify-center items-center"
+                className="w-[100%] flex flex-row justify-center items-center"
                 style={convertStyleDiv(demoColors.lightShades)}>
-                <section className="highLights flex flex-col items-start w-[40vw] gap-20 m-20">
+                <section className="highLights flex flex-col items-start w-[40vw] gap-20 m-48">
                     <h1
                         className="Title font-bold text-5xl transition-all ease-in-out"
                         style={convertStyle(demoColors.darkShades)}>
@@ -238,6 +238,9 @@ function Landing() {
                     </div>
                 </section>
             </div>
+            <div className = "h-24 w-[100%] mb-4 transition-all ease-in-out" style={{
+                 backgroundImage: `linear-gradient(to bottom, ${demoColors.lightShades}, white)`,
+            }}></div>
         </>
     );
 }

@@ -16,7 +16,7 @@ function PaletteDemoButton(props) {
     
 
     return (
-        <button onClick={stateChangehandler}  className="flex flex-row h-20 w-20 border-[3px] border-neutral-600 box-content rounded-2xl transition-all ease-in-out overflow-clip">
+        <button onClick={stateChangehandler}  className="flex flex-row h-20 w-20 border-2 border-neutral-400 box-content rounded-2xl transition-all ease-in-out overflow-clip">
             <div style={convertStyle(colors.lightShades)} className="bg-red-400 h-24 flex-grow"></div>
             <div style={convertStyle(colors.lightAccent)} className="bg-current h-24 flex-grow"></div>
             <div style={convertStyle(colors.mainBrand)} className="bg-current h-24 flex-grow"></div>
