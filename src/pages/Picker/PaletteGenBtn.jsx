@@ -6,6 +6,8 @@ function PaletteGenbtn(props) {
     const [palette, setPalette] = useContext(paletteContext);
 
     async function generateHandler(req) {
+        props.codes("Copy Codes")
+
         try {
             const response = await fetch("http://colormind.io/api/", req);
             if (!response.ok) {
