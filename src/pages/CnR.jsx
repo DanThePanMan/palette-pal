@@ -5,10 +5,15 @@ import Landing from "./Landing/Landing.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
 import Footer from "../components/Footer.jsx";
+import HeaderSidebar from "../components/HeaderSidebar.jsx";
 
 const paletteContext = createContext();
 
 function CnR() {
+
+    const [sidebar, setSidebar] = useState(false);
+
+
     const [palette, setPalette] = useState({
         "lightShades": [255, 255, 255],
         "lightAccent": [130, 130, 130],
@@ -19,7 +24,8 @@ function CnR() {
 
     return (
         <paletteContext.Provider value={[palette, setPalette]}>
-            <Header />
+            {sidebar ? <HeaderSidebar sidebar = {sidebar} setSidebar = {setSidebar} /> : null}
+            <Header setSidebar = {setSidebar}/>
             <RouterProvider router={router} />
             <Footer/>
         </paletteContext.Provider>

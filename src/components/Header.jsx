@@ -7,11 +7,14 @@ function dropdownHandler() {
     console.log("dropdown menu dropped");
 }
 
-function hamburgerHandler() {
-    console.log("hamburger menu opened");
-}
 
-function Header() {
+function Header(props) {
+    function hamburgerHandler() {
+        props.setSidebar(true);
+    }
+    
+
+    
     return (
         <header className="Header flex flex-row justify-center items-center w-[100%] h-[calc(4rem+4px)] border-b border-[#dad9d9] bg-[#FFFFFF]">
         <div className="headerContent w-screen xl:w-[60vw] p-8 flex flex-row justify-between items-center">
@@ -28,7 +31,7 @@ function Header() {
             </nav>
 
             {/* dynamic hamburgur menu on small screens  */}
-            <div className="hamburgerMenu md:hidden"onClick={hamburgerHandler}>
+            <div className="hamburgerMenu md:hidden" onClick={hamburgerHandler}>
                 <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2D2D2D" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
