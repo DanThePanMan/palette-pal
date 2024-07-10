@@ -37,17 +37,17 @@ function Landing() {
     return (
         <>
             <div
-                className="h-32 w-[100%] mt-4 pb-4 transition-all ease-in-out"
+                className="h-12 md:h-32 w-[100%] md:mt-4 md:pb-4 transition-all ease-in-out"
                 style={{
                     backgroundImage: `linear-gradient(to top, ${demoColors.lightShades}, white)`,
                 }}></div>
             <div
                 className="w-[100%]"
                 style={convertStyleDiv(demoColors.lightShades)}>
-                <section className="flex flex-row items-center justify-center flex-grow-0 m-20 mt-12 gap-20">
+                <section className="flex flex-col md:flex-row items-center justify-center flex-grow-0 m-20 mt-12 gap-4 md:gap-12 xl:gap-20">
                     <div className="flex flex-col gap-4">
                         <LandingDemo colors={demoColors} />
-                        <div className="flex flex-row justify-between gap-5">
+                        <div className="flex flex-row justify-between gap-2 xl:gap-5">
                             <PaletteDemoButton
                                 colors={{
                                     lightShades: "#FFFFFF",
@@ -100,14 +100,14 @@ function Landing() {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col items-start gap-5 w-[20vw]">
+                    <div className="flex flex-col items-start gap-5 w-[80vw] mt-12 md:mt-0 md:w-[20vw]">
                         <h1
-                            className="Title font-bold text-5xl transition-all ease-in-out"
+                            className="Title font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out"
                             style={convertStyle(demoColors.darkShades)}>
                             A Free Color Palette Preview Tool for Developers
                         </h1>
                         <p
-                            className="transition-all ease-in-out"
+                            className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
                             style={convertStyle(demoColors.lightAccent)}>
                             Generate thousands of beautiful palettes through{" "}
                             <a
@@ -117,7 +117,7 @@ function Landing() {
                             </a>{" "}
                             and preview them with our beautiful templates
                         </p>
-                        <div className="flex flex-row gap-5">
+                        <div className="flex flex-row gap-2 lg:gap-5">
                             <ButtonDynamicColor
                                 text="Use Your Own Palette"
                                 color={
@@ -142,7 +142,7 @@ function Landing() {
                         style={convertStyle(demoColors.darkShades)}>
                         Highlights
                     </h1>
-                    <div className="grid grid-rows-2 grid-cols-2 w-[40vw] gap-24">
+                    <div className="flex flex-col md:grid grid-rows-2 grid-cols-2 w-[40vw] gap-24">
                         <div className="flex flex-col gap-3">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ function Landing() {
                                 Easy To Use
                             </p>
                             <p
-                                className="subtext"
+                                className="subtext text-sm lg:text-lg"
                                 style={convertStyle(demoColors.lightAccent)}>
                                 Removes the hassle of changing colours on your
                                 own design, simple preview them using this
@@ -184,7 +184,7 @@ function Landing() {
                                 No Accounts Required
                             </p>
                             <p
-                                className="subtext"
+                                className="subtext text-sm lg:text-lg"
                                 style={convertStyle(demoColors.lightAccent)}>
                                 No need to connect any account, simply start
                                 generating with the click of a button
@@ -205,7 +205,7 @@ function Landing() {
                                 Fully Open Source
                             </p>
                             <p
-                                className="transition-all ease-in-out"
+                                className="transition-all ease-in-out text-sm lg:text-lg"
                                 style={convertStyle(demoColors.lightAccent)}>
                                 This software is protected under the GNU GPLv3
                                 license, feel free to checkout the repository{" "}
@@ -232,7 +232,7 @@ function Landing() {
                                 Check Out my Other Projects
                             </p>
                             <p
-                                className="transition-all ease-in-out"
+                                className="transition-all ease-in-out text-sm lg:text-lg"
                                 style={convertStyle(demoColors.lightAccent)}>
                                 Checkout my other projects on my{" "}
                                 <a className="underline">Github</a> or my{" "}
