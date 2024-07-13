@@ -12,7 +12,6 @@ function Header(props) {
     }
 
     function dropdownEnter(){
-        console.log("enter")
         setDropdown(true);
     }   
 
