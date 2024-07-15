@@ -7,6 +7,9 @@ import PaletteGenbtn from "../Picker/PaletteGenBtn";
 
 function MiniPicker() {
     const [palette, setPalette] = useContext(paletteContext);
+    console.log("palette resets")
+
+    console.table(palette)
 
     const [getParam, setParam] = useState({
         method: "POST",
