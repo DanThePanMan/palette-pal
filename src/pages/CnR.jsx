@@ -2,6 +2,7 @@ import { createContext } from "react";
 import Header from "../components/Header.jsx";
 import Picker from "./Picker/Picker.jsx";
 import Landing from "./Landing/Landing.jsx";
+import PreviewIndex from "./Previews/PreviewIndex.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
 import Footer from "../components/Footer.jsx";
@@ -21,6 +22,8 @@ function CnR() {
         "darkAccent": [237, 237, 237],
         "darkShades": [45, 45, 45],
     });
+
+    
 
     return (
         <paletteContext.Provider value={[palette, setPalette]}>
@@ -43,6 +46,10 @@ const router = createBrowserRouter([
       path: "picker",
       element: <Picker />,
     },
+    {
+        path: "Preview",
+        element: <PreviewIndex />,
+      },
 ]);
 
 export default CnR;

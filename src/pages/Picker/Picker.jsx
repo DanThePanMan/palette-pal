@@ -7,6 +7,7 @@ import ButtonNoColor from "../../components/ButtonNoColor";
 
 function Picker() {
     const [palette, setPalette] = useContext(paletteContext);
+   
 
     const [getParam, setParam] = useState({
         method: "POST",
@@ -29,11 +30,11 @@ function Picker() {
             <h1 className="font-bold text-xl md:text-5xl ">
                 Palette Generator
             </h1>
-            <Palette getaParam={getParam} setParam={setParam}></Palette>
+            <Palette/>
             <div className="flex flex-row gap-6">
                 <PaletteGenbtn params={getParam} codes={setAllCodes}></PaletteGenbtn>
                 <ButtonNoColor onClick = {() => getAllCodeshandler()} text={allCodes}></ButtonNoColor>
-                <ButtonNoColor text="Preview"></ButtonNoColor>
+                <a href="preview"><ButtonNoColor text="Preview"></ButtonNoColor></a>
             </div>
         </main>
     );

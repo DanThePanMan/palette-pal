@@ -45,9 +45,9 @@ function Landing() {
                 className="w-[100%]"
                 style={convertStyleDiv(demoColors.lightShades)}>
                 <section className="flex flex-col md:flex-row items-center justify-center flex-grow-0 m-20 mt-12 gap-4 md:gap-12 xl:gap-20">
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 justify-center items-center">
                         <LandingDemo colors={demoColors} />
-                        <div className="flex flex-row justify-between gap-2 xl:gap-5">
+                        <div className="flex flex-row justify-between gap-1 md:gap-2 xl:gap-5">
                             <PaletteDemoButton
                                 colors={{
                                     lightShades: "#FFFFFF",
@@ -136,13 +136,13 @@ function Landing() {
             <div
                 className="w-[100%] flex flex-row justify-center items-center"
                 style={convertStyleDiv(demoColors.lightShades)}>
-                <section className="highLights flex flex-col items-start w-[40vw] gap-20 m-32">
+                <section className="highLights flex flex-col items-start w-[80vw] md:w-[40vw] gap-20 m-32">
                     <h1
                         className="Title font-bold text-5xl transition-all ease-in-out"
                         style={convertStyle(demoColors.darkShades)}>
                         Highlights
                     </h1>
-                    <div className="flex flex-col md:grid grid-rows-2 grid-cols-2 w-[40vw] gap-24">
+                    <div className="flex flex-col md:grid grid-rows-2 grid-cols-2 w-[60vw] md:w-[40vw] gap-24">
                         <div className="flex flex-col gap-3">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@ function Landing() {
                                 className="transition-all ease-in-out text-sm lg:text-lg"
                                 style={convertStyle(demoColors.lightAccent)}>
                                 Checkout my other projects on my{" "}
-                                <a className="underline">Github</a> or my{" "}
+                                <a className="underline" href="https://github.com/DanThePanMan/">Github</a> or my{" "}
                                 <a className="underline">personal website</a>.
                             </p>
                         </div>

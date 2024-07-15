@@ -30,7 +30,7 @@ function Header(props) {
                 <ul className="md:flex flex-row justify-around gap-10 text-md hidden font-medium text-[#2D2D2D]">
                     
                     <li><a href="" className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out">Upcoming Features</a></li>
-                    <li><a href="" className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out" onMouseEnter={dropdownEnter} >Tools</a>
+                    <li><a className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out" onMouseEnter={dropdownEnter} >Tools</a>
                     </li>
                     <li><a href="" className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out" >My Socials</a></li>
                 </ul>
