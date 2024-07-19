@@ -2,11 +2,16 @@ import { useContext } from "react";
 import { paletteContext } from "../CnR";
 import ButtonNoColor from "../../components/ButtonNoColor";
 
+
+
+
 function PaletteGenbtn(props) {
     const [palette, setPalette] = useContext(paletteContext);
 
+    
+
     async function generateHandler(req) {
-        props.codes("Copy Codes")
+        props.codes("Copy Codes");
 
         try {
             const response = await fetch("http://colormind.io/api/", req);
@@ -16,12 +21,14 @@ function PaletteGenbtn(props) {
             const data = await response.json();
             const temp = data.result;
             setPalette({
-                "lightShades": temp[0],
-                "lightAccent": temp[1],
-                "mainBrand": temp[2],
-                "darkAccent": temp[3],
-                "darkShades": temp[4],
+                lightShades: temp[0],
+                lightAccent: temp[1],
+                mainBrand: temp[2],
+                darkAccent: temp[3],
+                darkShades: temp[4],
             });
+
+           
         } catch (error) {
             console.log("error"); //make this show a modal
         }
@@ -30,14 +37,10 @@ function PaletteGenbtn(props) {
     return (
         <>
             <ButtonNoColor
-
-           
                 onClick={() => {
                     generateHandler(props.params);
                 }}
-                text="Generate"
-            >
-            </ButtonNoColor>
+                text="Generate"></ButtonNoColor>
         </>
     );
 }

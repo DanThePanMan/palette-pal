@@ -10,12 +10,16 @@ function convertStyle(colorArray){
 }
 function MiniPickerPalette(){
 
+
+    
+    
+
     
 
     const [copyMessageState, setCopyMessageState] = useState(false)
 
     const [palette, setPalette] = useContext(paletteContext);
-    console.table(palette)
+
 
     return(
         <>

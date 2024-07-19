@@ -1,5 +1,5 @@
 import { paletteContext } from "../CnR";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
 import CopyNotif from "./CopyNotif";
 
@@ -18,16 +18,24 @@ async function copyHandler(setStateVar, colorArray){
 }
 
 
+
 function Palette(){
+
+    
+    
 
     const [copyMessageState, setCopyMessageState] = useState(false)
 
     const [palette, setPalette] = useContext(paletteContext);
 
 
+    useEffect(() => {
+        sessionStorage.setItem('defaultData', JSON.stringify(palette));
+    },[palette])
+
     return(
         <>
-        <div className=" w-[300px] h-[430px] md:w-[750px] md:h-[430px] bg-green-400 flex flex-col md:flex-row rounded-3xl overflow-clip border borde-[828282] relative">
+        <div className=" w-[300px] h-[430px] md:w-[750px] md:h-[430px] flex flex-col md:flex-row rounded-3xl overflow-clip border borde-[828282] relative">
             <div onClick={() => copyHandler(setCopyMessageState, palette.lightShades)} className=" flex text-opacity-0 hover:text-opacity-100 md-flex w-[150px] h-[430px] hover:bg-black/40 absolute transition-all ease-in-out opacity-0 hover:opacity-100 text-sm items-center justify-center text-white">rgb({palette.lightShades[0]}, {palette.lightShades[1]}, {palette.lightShades[2]})</div>
             <div onClick={() => copyHandler(setCopyMessageState, palette.lightAccent)} className="flex text-opacity-0 hover:text-opacity-100 md-flex w-[150px] h-[430px] hover:bg-black/40 absolute translate-x-[149px] transition-all ease-in-out opacity-0 hover:opacity-100 text-sm items-center justify-center text-white">rgb({palette.lightAccent[0]}, {palette.lightAccent[1]}, {palette.lightAccent[2]})</div>
             <div onClick={() => copyHandler(setCopyMessageState, palette.mainBrand)} className="flex text-opacity-0 hover:text-opacity-100 md-flex w-[150px] h-[430px] hover:bg-black/40 absolute translate-x-[299px] transition-all ease-in-out opacity-0 hover:opacity-100 text-sm items-center justify-center text-white">rgb({palette.mainBrand[0]}, {palette.mainBrand[1]}, {palette.mainBrand[2]})</div>

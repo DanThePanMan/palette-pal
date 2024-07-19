@@ -14,14 +14,10 @@ function CnR() {
 
     const [sidebar, setSidebar] = useState(false);
 
+    const storedData = sessionStorage.getItem('defaultData');
 
-    const [palette, setPalette] = useState({
-        "lightShades": [255, 255, 255],
-        "lightAccent": [130, 130, 130],
-        "mainBrand": [45, 45, 45],
-        "darkAccent": [237, 237, 237],
-        "darkShades": [45, 45, 45],
-    });
+    const [palette, setPalette] = useState(JSON.parse(storedData));
+
 
     
 

@@ -1,15 +1,13 @@
 import MiniPickerPalette from "./MiniPickerPalette";
 import { useState } from "react";
 import { paletteContext } from "../CnR";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import PaletteGenbtn from "../Picker/PaletteGenBtn";
 
 
 function MiniPicker() {
     const [palette, setPalette] = useContext(paletteContext);
-    console.log("palette resets")
 
-    console.table(palette)
 
     const [getParam, setParam] = useState({
         method: "POST",
@@ -19,7 +17,9 @@ function MiniPicker() {
         }),
     });
 
-
+    useEffect(() => {
+        sessionStorage.setItem('defaultData', JSON.stringify(palette));
+    },[palette])
     
 
 
@@ -27,7 +27,7 @@ function MiniPicker() {
         <div className="bg-[#2D2D2D] w-[100%] h-14 flex flex-row justify-center items-center gap-4">
             <p className="text-white font-medium text-lg">Currently Previewing:</p>
             <MiniPickerPalette></MiniPickerPalette>
-            <PaletteGenbtn params={getParam}></PaletteGenbtn>
+            <PaletteGenbtn params={getParam} codes={() => {}}></PaletteGenbtn>
         </div>
     );
 }

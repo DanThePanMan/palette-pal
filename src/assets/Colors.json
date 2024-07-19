@@ -1,7 +1,7 @@
 {
-    "lightShades": "FFFFFF",
-    "lightAccent": "828282",
-    "mainBrand": "2D2D2D",
-    "darkAccent": "EDEDED",
-    "darkShades": "2D2D2D"
+    "lightShades": [255, 255, 255],
+    "lightAccent": [130, 130, 130],
+    "mainBrand": [45, 45, 45],
+    "darkAccent": [237, 237, 237],
+    "darkShades": [45, 45, 45]
 }

@@ -7,6 +7,9 @@ import ButtonNoColor from "../../components/ButtonNoColor";
 
 function Picker() {
     const [palette, setPalette] = useContext(paletteContext);
+
+    console.log("this is from the picker component");
+    console.table(palette)
    
 
     const [getParam, setParam] = useState({
