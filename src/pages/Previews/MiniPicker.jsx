@@ -3,9 +3,10 @@ import { useState } from "react";
 import { paletteContext } from "../CnR";
 import { useContext, useEffect } from "react";
 import PaletteGenbtn from "../Picker/PaletteGenBtn";
+import SelectPageDropdown from "./SelectPageDropdown";
 
 
-function MiniPicker() {
+function MiniPicker(props) {
     const [palette, setPalette] = useContext(paletteContext);
 
 
@@ -28,6 +29,7 @@ function MiniPicker() {
             <p className="text-white font-medium text-lg">Currently Previewing:</p>
             <MiniPickerPalette></MiniPickerPalette>
             <PaletteGenbtn params={getParam} codes={() => {}}></PaletteGenbtn>
+            <SelectPageDropdown page={props.page} setPage={props.setPage}n/>
         </div>
     );
 }

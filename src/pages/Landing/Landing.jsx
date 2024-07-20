@@ -101,11 +101,11 @@ function Landing() {
                         </div>
                     </div>
                     <div className="flex flex-col items-start gap-5 w-[80vw] mt-12 md:mt-0 md:w-[20vw]">
-                        <h1
-                            className="Title font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out"
+                        <span
+                            className="type-Landing font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out"
                             style={convertStyle(demoColors.darkShades)}>
-                            A Free Color Palette Preview Tool for Developers
-                        </h1>
+                            
+                        </span>
                         <p
                             className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
                             style={convertStyle(demoColors.lightAccent)}>
