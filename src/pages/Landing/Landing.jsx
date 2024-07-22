@@ -2,6 +2,7 @@ import { useState } from "react";
 import ButtonDynamicColor from "../../components/ButtonDynamicColor";
 import LandingDemo from "./LandingDemo";
 import PaletteDemoButton from "./PaletteDemoButton";
+import ClickToPreview from "../../components/ClickToPreview";
 
 function Landing() {
     const [demoColors, setDemoColors] = useState({
@@ -45,6 +46,7 @@ function Landing() {
                 className="w-[100%]"
                 style={convertStyleDiv(demoColors.lightShades)}>
                 <section className="flex flex-col md:flex-row items-center justify-center flex-grow-0 m-20 mt-12 gap-4 md:gap-12 xl:gap-20">
+                    <ClickToPreview></ClickToPreview>
                     <div className="flex flex-col gap-4 justify-center items-center">
                         <LandingDemo colors={demoColors} />
                         <div className="flex flex-row justify-between gap-1 md:gap-2 xl:gap-5">
@@ -102,7 +104,7 @@ function Landing() {
                     </div>
                     <div className="flex flex-col items-start gap-5 w-[80vw] mt-12 md:mt-0 md:w-[20vw]">
                         <span
-                            className="type-Landing font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out"
+                            className="type-Landing font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                             style={convertStyle(demoColors.darkShades)}>
                             
                         </span>
@@ -208,8 +210,8 @@ function Landing() {
                                 className="transition-all ease-in-out text-sm lg:text-lg"
                                 style={convertStyle(demoColors.lightAccent)}>
                                 This software is protected under the GNU GPLv3
-                                license, feel free to checkout the repository{" "}
-                                <a className="underline">here</a>.
+                                license, feel free to checkout the repository {" "}
+                                <a className="underline" href="https://github.com/DanThePanMan/palette-pal">here</a>.
                             </p>
                         </div>
                         <div className="flex flex-col gap-3">
@@ -236,7 +238,7 @@ function Landing() {
                                 style={convertStyle(demoColors.lightAccent)}>
                                 Checkout my other projects on my{" "}
                                 <a className="underline" href="https://github.com/DanThePanMan/">Github</a> or my{" "}
-                                <a className="underline">personal website</a>.
+                                <a className="underline" onClick={() => {alert("The Personal Website is Under Construction!")}}>personal website</a>.
                             </p>
                         </div>
                     </div>
