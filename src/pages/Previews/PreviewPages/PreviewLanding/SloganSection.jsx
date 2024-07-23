@@ -2,21 +2,13 @@ import { paletteContext } from "../../../CnR";
 import { useContext } from "react";
 import ColorArt from "./ColorArt";
 import PreviewButton from "../../PreviewButton";
+import { convertStyleDiv } from "../../Convert";
+import { convertStyleText } from "../../Convert";
 
 function SloganSection() {
     const [palette, setPalette] = useContext(paletteContext);
 
-    function convertStyleText(code) {
-        return {
-            color: `rgb(${code[0]}, ${code[1]}, ${code[2]})`,
-        };
-    }
-
-    function convertStyleDiv(code) {
-        return {
-            backgroundColor: `rgb(${code[0]}, ${code[1]}, ${code[2]})`,
-        };
-    }
+    
 
     return (
         <div className="w-[100%]" style={convertStyleDiv(palette.lightShades)}>

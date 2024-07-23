@@ -12,7 +12,7 @@ function ColorArt() {
 
     return (
         <div
-            className=" h-64 xl:h-72 w-80 md:w-96 xl:w-[31rem] rounded-2xl border border-neutral-400 transition-all ease-in-out overflow-clip"
+            className="hidden md:flex h-64 xl:h-72 w-80 md:w-96 xl:w-[31rem] rounded-2xl border border-neutral-400 transition-all ease-in-out overflow-clip"
             style={convertStyle(palette.lightShades)}>
             
         </div>
