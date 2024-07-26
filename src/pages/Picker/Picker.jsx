@@ -6,23 +6,21 @@ import { useContext } from "react";
 import ButtonNoColor from "../../components/ButtonNoColor";
 
 function Picker() {
-    const [palette, setPalette] = useContext(paletteContext);
+    const [palette, setPalette] = useContext(paletteContext)
 
-    console.log("this is from the picker component");
-    console.table(palette)
-   
+    const models = ["default", "ui"]
 
     const [getParam, setParam] = useState({
         method: "POST",
         body: JSON.stringify({
-            model: "default",
+            model: models[Math.floor(Math.random() * 2)],
             input: [[243, 244, 243], "N", "N", "N", "N"],
         }),
     });
 
-    const [allCodes, setAllCodes] = useState("Copy Codes")
+    const [allCodes, setAllCodes] = useState("Copy Codes");
 
-    async function getAllCodeshandler(){
+    async function getAllCodeshandler() {
         setAllCodes("Code Copied");
         const copiedText = JSON.stringify(palette);
         await navigator.clipboard.writeText(copiedText);
@@ -33,11 +31,19 @@ function Picker() {
             <h1 className="font-bold text-xl md:text-5xl ">
                 Palette Generator
             </h1>
-            <Palette/>
+            <Palette />
             <div className="flex flex-row gap-6">
-                <PaletteGenbtn params={getParam} codes={setAllCodes}></PaletteGenbtn>
-                <ButtonNoColor onClick = {() => getAllCodeshandler()} text={allCodes}></ButtonNoColor>
-                <a href="preview"><ButtonNoColor text="Preview"></ButtonNoColor></a>
+                <PaletteGenbtn
+                    params={getParam}
+                    codes={setAllCodes}
+                ></PaletteGenbtn>
+                <ButtonNoColor
+                    onClick={() => getAllCodeshandler()}
+                    text={allCodes}
+                ></ButtonNoColor>
+                <a href="preview">
+                    <ButtonNoColor text="Preview"></ButtonNoColor>
+                </a>
             </div>
         </main>
     );
