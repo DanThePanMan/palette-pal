@@ -2,6 +2,7 @@ import { paletteContext } from "../../../CnR";
 import { useContext } from "react";
 import { convertStyleDiv } from "../../Convert";
 import { convertStyleText } from "../../Convert";
+import PreviewButton from "../../PreviewButton";
 
 function PricePlanning() {
     const [palette, setPalette] = useContext(paletteContext);
@@ -25,7 +26,7 @@ function PricePlanning() {
                 </div>
                 <div className="flex flex-col md:flex-row gap-6 lg:gap-16 xl:gap-24">
                     <div
-                        className="transition-all ease-in-out flex flex-col gap-3 p-6 2xl:p-10 w-80 h-[36rem] md:w-60 md:h-84 2xl:w-80 2xl:h-[36rem] rounded-lg"
+                        className="transition-all ease-in-out flex flex-col items-center gap-3 p-6 2xl:p-10 w-80 h-[36rem] md:w-60 md:h-84 2xl:w-80 2xl:h-[36rem] rounded-lg"
                         style={convertStyleDiv(palette.lightAccent)}
                     >
                         <div className="flex flex-col gap-2 items-center">
@@ -42,9 +43,50 @@ function PricePlanning() {
                                 Free
                             </p>
                         </div>
+                        <ul
+                            style={convertStyleText(palette.darkShades)}
+                            className="flex flex-col gap-6 m-8 mr-20"
+                        >
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                        </ul>
+                        <PreviewButton text="Select" color1={palette.mainBrand} color2={palette.lightShades}></PreviewButton>
                     </div>
                     <div
-                        className="transition-all ease-in-out flex flex-col gap-3 p-6 2xl:p-10 w-80 h-[36rem] md:w-60 md:h-84 2xl:w-80 2xl:h-[36rem] rounded-lg"
+                        className="transition-all ease-in-out flex items-center flex-col gap-3 p-6 2xl:p-10 w-80 h-[36rem] md:w-60 md:h-84 2xl:w-80 2xl:h-[36rem] rounded-lg"
                         style={convertStyleDiv(palette.mainBrand)}
                     >
                         <div className="flex flex-col gap-2 items-center">
@@ -61,9 +103,52 @@ function PricePlanning() {
                                 Free
                             </p>
                         </div>
+                        <ul
+                            style={convertStyleText(palette.darkShades)}
+                            className="flex flex-col gap-6 m-8 mr-20"
+                        >
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.lightAccent)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.lightAccent)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.lightAccent)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.lightAccent)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.lightAccent)}
+                                ></div>
+                                A feature
+                            </li>
+                        </ul>
+                        <PreviewButton text="Select" color1={palette.lightAccent} color2={palette.lightShades}></PreviewButton>
+                    
+                        
                     </div>
                     <div
-                        className="transition-all ease-in-out flex flex-col gap-3 p-6 2xl:p-10 w-80 h-[36rem] md:w-60 md:h-84 2xl:w-80 2xl:h-[36rem] rounded-lg"
+                        className="transition-all ease-in-out flex items-center flex-col gap-3 p-6 2xl:p-10 w-80 h-[36rem] md:w-60 md:h-84 2xl:w-80 2xl:h-[36rem] rounded-lg"
                         style={convertStyleDiv(palette.lightAccent)}
                     >
                         <div className="flex flex-col gap-2 items-center">
@@ -80,6 +165,48 @@ function PricePlanning() {
                                 Free
                             </p>
                         </div>
+                        <ul
+                            style={convertStyleText(palette.darkShades)}
+                            className="flex flex-col gap-6 m-8 mr-20"
+                        >
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                            <li className="flex flex-row gap-2 items-center">
+                                <div
+                                    className="w-2 h-2 rounded-xl"
+                                    style={convertStyleDiv(palette.mainBrand)}
+                                ></div>
+                                A feature
+                            </li>
+                        </ul>
+                        <PreviewButton text="Contact for Pricing" color1={palette.mainBrand} color2={palette.lightShades}></PreviewButton>
+                    
                     </div>
                 </div>
             </section>
