@@ -1,22 +1,38 @@
 import PaletteGenbtn from "./PaletteGenBtn";
 import Palette from "./Palette";
-import { useState } from "react";
 import { paletteContext } from "../CnR";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import ButtonNoColor from "../../components/ButtonNoColor";
 
 function Picker() {
-    const [palette, setPalette] = useContext(paletteContext)
+    const [palette, setPalette] = useContext(paletteContext);
 
-    const models = ["default", "ui"]
+    // get models
+    const [models, setModels] = useState(["default"]);
 
-    const [getParam, setParam] = useState({
+    useEffect(() => {
+        function fetchData(url) {
+            fetch(url)
+                .then((response) => response.json())
+                .then((data) => setModels(data.result))
+                .catch((error) => console.error("Error:", error));
+        }
+
+        fetchData("http://colormind.io/list/");
+    }, []);
+
+    function getRandomItem(arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        return arr[randomIndex];
+    }
+
+    const param = {
         method: "POST",
         body: JSON.stringify({
-            model: models[Math.floor(Math.random() * 2)],
+            model: getRandomItem(models),
             input: [[243, 244, 243], "N", "N", "N", "N"],
         }),
-    });
+    };
 
     const [allCodes, setAllCodes] = useState("Copy Codes");
 
@@ -34,7 +50,7 @@ function Picker() {
             <Palette />
             <div className="flex flex-row gap-6">
                 <PaletteGenbtn
-                    params={getParam}
+                    params={param}
                     codes={setAllCodes}
                 ></PaletteGenbtn>
                 <ButtonNoColor
