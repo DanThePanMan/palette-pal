@@ -292,15 +292,50 @@ function DashboardIndex() {
                     </div>
                 </div>
                 <div
-                    className="col-span-2 rounded-lg transition-all ease-in-out"
+                    className="col-span-2 rounded-lg transition-all ease-in-out flex flex-col gap-3 p-12 "
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
                         className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        Another Statistic
+                        Blalance
                     </p>
+                    <div className="flex flex-row justify-between ">
+                        <div className="flex flex-col gap-0 h-12">
+                            <h1
+                                className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                                style={convertStyleText(palette.darkShades)}
+                            >
+                                $325
+                            </h1>
+                            <p className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2 text-red-600">
+                                Rejected
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-2 h-12">
+                            <h1
+                                className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                                style={convertStyleText(palette.darkShades)}
+                            >
+                                $984
+                            </h1>
+                            <p className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2 text-yellow-500">
+                                Pending
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-2 h-12">
+                            <h1
+                                className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                                style={convertStyleText(palette.darkShades)}
+                            >
+                                $788
+                            </h1>
+                            <p className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2 text-green-600">
+                                Available
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div
