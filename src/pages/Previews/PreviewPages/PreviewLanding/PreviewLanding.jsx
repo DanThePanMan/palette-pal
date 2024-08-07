@@ -14,7 +14,7 @@ function convert(code) {
 function PreviewLanding() {
     const [palette, setPalette] = useContext(paletteContext);
     return (
-        <div className="overflow-x-hidden flex flex-col flex-grow w-screen">
+        <div className="overflow-x-hidden flex flex-col flex-grow w-[100%]">
             <SloganSection />
             <Features />
             <Signup/>

@@ -1,17 +1,22 @@
-
 import { convertStyleDiv } from "../../Convert";
 import { convertStyleText } from "../../Convert";
 import { paletteContext } from "../../../CnR";
 import { useContext } from "react";
 
-function BlogIndex() {
+//component imports
+import BlogNav from "./BlogIndex/BlogNav";
+import HighlightArticle from "./BlogIndex/HighlightArticle";
+
+function BlogIndex(props) {
+    function articleHandler() {
+        props.setShowItem(true);
+    }
+
     const [palette, setPalette] = useContext(paletteContext);
     return (
-        <div
-                style={convertStyleDiv(palette.lightShades)}
-                className="w-[100%] h-screen grid grid-cols-3 grid-rows-4 gap-4 p-4 lg:p-32 xl:p-26 xl:pr-[38rem] xl:pl-[38rem] transition-all ease-in-out"
-            >
-            
+        <div className="flex flex-col flex-grow w-[100%] items-center">
+            <BlogNav/>
+            <HighlightArticle/>
         </div>
     );
 }

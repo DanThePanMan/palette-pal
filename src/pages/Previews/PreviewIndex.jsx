@@ -1,7 +1,7 @@
 import MiniPicker from "./MiniPicker";
 import PreviewLanding from "./PreviewPages/PreviewLanding/PreviewLanding";
 import DashboardIndex from "./PreviewPages/PreviewDashboard/DashboardIndex";
-import BlogIndex from "./PreviewPages/PreviewBlog/BlogIndex";
+import BlogContainer from "./PreviewPages/PreviewBlog/BlogIndex";
 
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ function PreviewIndex() {
             case "DashBoard":
                 return <DashboardIndex />;
             case "Blog":
-                return <BlogIndex />;
+                return <BlogContainer />;
             default:
                 return null; // or handle default case accordingly
         }
