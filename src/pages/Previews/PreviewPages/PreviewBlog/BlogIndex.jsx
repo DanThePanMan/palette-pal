@@ -6,6 +6,7 @@ import { useContext } from "react";
 //component imports
 import BlogNav from "./BlogIndex/BlogNav";
 import HighlightArticle from "./BlogIndex/HighlightArticle";
+import FirstFour from "./BlogIndex/FirstFour";
 
 function BlogIndex(props) {
     function articleHandler() {
@@ -14,9 +15,13 @@ function BlogIndex(props) {
 
     const [palette, setPalette] = useContext(paletteContext);
     return (
-        <div className="flex flex-col flex-grow w-[100%] items-center">
-            <BlogNav/>
-            <HighlightArticle/>
+        <div
+            className="flex flex-col flex-grow w-[100%] items-center"
+            style={convertStyleDiv(palette.lightShades)}
+        >
+            <BlogNav />
+            <HighlightArticle />
+            <FirstFour />
         </div>
     );
 }
