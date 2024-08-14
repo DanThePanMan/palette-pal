@@ -245,7 +245,7 @@ function Landing() {
                 </section>
             </div>
             <div
-                className="h-20 w-[100%] mb-4 transition-all ease-in-out"
+                className="h-20 flex w-[100%] transition-all ease-in-out "
                 style={{
                     backgroundImage: `linear-gradient(to bottom, ${demoColors.lightShades}, white)`,
                 }}></div>

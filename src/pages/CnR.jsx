@@ -11,27 +11,24 @@ import HeaderSidebar from "../components/HeaderSidebar.jsx";
 const paletteContext = createContext();
 
 function CnR() {
-
     const [sidebar, setSidebar] = useState(false);
 
-    const storedData = sessionStorage.getItem('defaultData');
+    const storedData = sessionStorage.getItem("defaultData");
 
     const [palette, setPalette] = useState(JSON.parse(storedData));
 
-
-    
-
     return (
         <paletteContext.Provider value={[palette, setPalette]}>
-            {sidebar ? <HeaderSidebar sidebar = {sidebar} setSidebar = {setSidebar} /> : null}
-            <Header setSidebar = {setSidebar}/>
+            {sidebar ? (
+                <HeaderSidebar sidebar={sidebar} setSidebar={setSidebar} />
+            ) : null}
+            <Header setSidebar={setSidebar} />
             <RouterProvider router={router} />
-            <Footer/>
+            <Footer />
         </paletteContext.Provider>
     );
-    
 }
-export{paletteContext};
+export { paletteContext };
 
 const router = createBrowserRouter([
     {
@@ -39,13 +36,13 @@ const router = createBrowserRouter([
         element: <Landing />,
     },
     {
-      path: "picker",
-      element: <Picker />,
+        path: "picker",
+        element: <Picker />,
     },
     {
         path: "Preview",
         element: <PreviewIndex />,
-      },
+    },
 ]);
 
 export default CnR;

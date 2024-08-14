@@ -55,18 +55,18 @@ function SelectPageDropdown(props) {
                     <button
                         className="hover:text-[#828282] rounded-md p-2 transition-all ease-in-out"
                         onClick={() => {
-                            setPage("eCommerce");
-                            setIsOpen(false);
-                        }}>
-                        eCommerce
-                    </button>
-                    <button
-                        className="hover:text-[#828282] rounded-md p-2 transition-all ease-in-out"
-                        onClick={() => {
                             setPage("Blog");
                             setIsOpen(false);
                         }}>
                         Blog
+                    </button>
+                    <button
+                        className="hover:text-[#828282] rounded-md p-2 transition-all ease-in-out"
+                        onClick={() => {
+                            setPage("Shop");
+                            setIsOpen(false);
+                        }}>
+                        Shop
                     </button>
                 </div>
             )}
