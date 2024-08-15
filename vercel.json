@@ -1,11 +1,8 @@
 {
-    "routes": [
-        { "src": "/", "dest": "/" },
-        { "src": "/Picker", "dest": "/" },
-        { "src": "/Preview", "dest": "/" }
-    ],
-
     "rewrites": [
+        { "source": "/", "destination": "/" },
+        { "source": "/Picker", "destination": "/" },
+        { "source": "/Preview", "destination": "/" },
         {
             "source": "/api/(.*)",
             "destination": "http://colormind.io/api/"
