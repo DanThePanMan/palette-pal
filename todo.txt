@@ -1,3 +1,0 @@
-make a json file and now make it just read from that json
-
-make it reset somehow when the web page reloads, so we use session storage
