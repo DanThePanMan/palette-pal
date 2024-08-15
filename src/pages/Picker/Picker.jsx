@@ -18,7 +18,7 @@ function Picker() {
                 .catch((error) => console.error("Error:", error));
         }
 
-        fetchData("http://colormind.io/list/");
+        fetchData("/api/proxyList");
     }, []);
 
     function getRandomItem(arr) {
