@@ -12,13 +12,13 @@ function Picker() {
 
     useEffect(() => {
         function fetchData(url) {
-            fetch(url, { mode: 'no-cors' })
+            fetch(url)
                 .then((response) => response.json())
                 .then((data) => setModels(data.result))
                 .catch((error) => console.error("Error:", error));
         }
 
-        fetchData("//colormind.io/list/");
+        fetchData("http//colormind.io/list/");
     }, []);
 
     function getRandomItem(arr) {
@@ -32,7 +32,6 @@ function Picker() {
             model: getRandomItem(models),
             input: [[243, 244, 243], "N", "N", "N", "N"],
         }),
-        mode: 'no-cors'
     };
 
     const [allCodes, setAllCodes] = useState("Copy Codes");
