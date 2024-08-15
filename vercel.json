@@ -1,0 +1,7 @@
+{
+    "routes": [
+        { "src": "/", "dest": "/" },
+        { "src": "/Picker", "dest": "/" },
+        { "src": "/Preview", "dest": "/" }
+    ]
+}
