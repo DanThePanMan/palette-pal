@@ -2,10 +2,6 @@
     "rewrites": [
         { "source": "/", "destination": "/" },
         { "source": "/Picker", "destination": "/" },
-        { "source": "/preview", "destination": "/" },
-        {
-            "source": "/api/:path*",
-            "destination": "http://colormind.io/api/:path*"
-        }
+        { "source": "/preview", "destination": "/" }
     ]
 }
