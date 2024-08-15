@@ -9,7 +9,7 @@ function PaletteGenbtn(props) {
         props.codes("Copy Codes");
 
         try {
-            const response = await fetch("http://colormind.io/api/", req);
+            const response = await fetch("//colormind.io/api/", req);
             if (!response.ok) {
                 throw new Error("Could not get response from server");
             }

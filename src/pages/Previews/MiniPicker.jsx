@@ -18,7 +18,7 @@ function MiniPicker(props) {
                 .catch((error) => console.error("Error:", error));
         }
 
-        fetchData("http://colormind.io/list/");
+        fetchData("//colormind.io/list/");
     }, []);
 
     function getRandomItem(arr) {
