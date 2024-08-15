@@ -1,1 +1,54 @@
-hello
+
+<h1 align="center" style="font-weight: bold;">Palette Pal </h1>
+
+<p align="center">
+<a href="#tech">Technologies</a>
+<a href="#started">Getting Started</a>
+<a href="#colab">Collaborators</a>
+<a href="#contribute">Contribute</a> 
+</p>
+
+
+<p align="center">A powerful tool for designers and engineers to effortlessly generate, customize, and test color palettes directly on website templates.</p>
+
+
+<p align="center">
+<a href="https://palettepal.vercel.app/">Click here to check it out!</a>
+</p>
+
+<h2 id="layout">🎨 Layout</h2>
+
+<p align="center">
+
+<img src="https://i.imgur.com/AH5SEbG.png[/img" alt="Palette Generator" width="400px">
+<img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px">
+</p>
+
+<h2 id="started">🚀 Getting started</h2>
+
+You can run this project locally by cloning the repository
+
+<h3>Cloning</h3>
+
+How to clone your project
+
+```bash
+git clone git@github.com:DanThePanMan/palette-pal.git
+```
+
+<h3>Starting</h3>
+
+How to start your project
+
+```bash
+cd palette-pal
+npm run dev
+```
+
+<h2 id="contribute">📫 Contribute</h2>
+
+You can contribute to this project by making your own branch and creating a pull request.
+
+1. `git clone git@github.com:DanThePanMan/palette-pal.git`
+2. `git checkout -b feature/NAME`
+3. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
