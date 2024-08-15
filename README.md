@@ -4,7 +4,6 @@
 <p align="center">
 <a href="#tech">Technologies</a>
 <a href="#started">Getting Started</a>
-<a href="#colab">Collaborators</a>
 <a href="#contribute">Contribute</a> 
 </p>
 
@@ -23,6 +22,12 @@
 <img src="https://i.imgur.com/AH5SEbG.png[/img" alt="Palette Generator" width="400px">
 <img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px">
 </p>
+
+<h2 id="started">💻 Features</h2>
+
+- Effortlessly generates colour palettes via Colormind
+- Preview these palettes on your page by applyin them to various website templates
+- Apply these palettes to your website through bootstrap or tailwindCSS
 
 <h2 id="started">🚀 Getting started</h2>
 
