@@ -8,7 +8,7 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "http://colormind.io/api/$1"
+            "destination": "http://colormind.io/api/"
         }
     ]
 }
