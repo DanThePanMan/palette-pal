@@ -4,8 +4,8 @@
         { "source": "/Picker", "destination": "/" },
         { "source": "/Preview", "destination": "/" },
         {
-            "source": "/api/(.*)",
-            "destination": "http://colormind.io/api/"
+            "source": "/api/:path*",
+            "destination": "http://colormind.io/api/:path*"
         }
     ]
 }
