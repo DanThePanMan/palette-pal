@@ -31,6 +31,7 @@ function Picker() {
         body: JSON.stringify({
             model: getRandomItem(models),
             input: [[243, 244, 243], "N", "N", "N", "N"],
+            mode: 'no-cors'
         }),
     };
 

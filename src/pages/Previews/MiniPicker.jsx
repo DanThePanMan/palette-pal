@@ -28,7 +28,7 @@ function MiniPicker(props) {
 
     const param = {
         method: "POST",
-        body: JSON.stringify({
+        body: JSON.stringify({  
             model: getRandomItem(models),
             input: [[243, 244, 243], "N", "N", "N", "N"],
         }),
