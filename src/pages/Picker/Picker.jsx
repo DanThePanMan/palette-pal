@@ -12,7 +12,7 @@ function Picker() {
 
     useEffect(() => {
         function fetchData(url) {
-            fetch(url)
+            fetch(url, { mode: 'no-cors' })
                 .then((response) => response.json())
                 .then((data) => setModels(data.result))
                 .catch((error) => console.error("Error:", error));
