@@ -3,12 +3,14 @@
 
 <p align="center">
 <a href="#tech">Technologies</a>
+<a href="#features">Features</a>
 <a href="#started">Getting Started</a>
 <a href="#contribute">Contribute</a> 
 </p>
 
 
 <p align="center">A powerful tool for designers and engineers to effortlessly generate, customize, and test color palettes directly on website templates.</p>
+
 
 
 <p align="center">
@@ -23,7 +25,15 @@
 <img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px">
 </p>
 
-<h2 id="started">💻 Features</h2>
+<h2 id="tech">📝 Technology</h2>
+
+- Built using React JS with vite
+- Styled with Tailwind CSS
+- Palette Generation Powered by <a href="http://colormind.io/">Colormind</a>
+- Deployed with Vercel
+
+
+<h2 id="features">💻 Features</h2>
 
 - Effortlessly generates colour palettes via Colormind
 - Preview these palettes on your page by applyin them to various website templates
