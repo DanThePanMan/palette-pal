@@ -3,5 +3,12 @@
         { "src": "/", "dest": "/" },
         { "src": "/Picker", "dest": "/" },
         { "src": "/Preview", "dest": "/" }
+    ],
+
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "http://colormind.io/api/$1"
+        }
     ]
 }

@@ -2,13 +2,8 @@ import { useContext } from "react";
 import { paletteContext } from "../CnR";
 import ButtonNoColor from "../../components/ButtonNoColor";
 
-
-
-
 function PaletteGenbtn(props) {
     const [palette, setPalette] = useContext(paletteContext);
-
-    
 
     async function generateHandler(req) {
         props.codes("Copy Codes");
@@ -27,8 +22,6 @@ function PaletteGenbtn(props) {
                 darkAccent: temp[3],
                 darkShades: temp[4],
             });
-
-           
         } catch (error) {
             console.log("error"); //make this show a modal
         }
@@ -40,7 +33,8 @@ function PaletteGenbtn(props) {
                 onClick={() => {
                     generateHandler(props.params);
                 }}
-                text="Generate"></ButtonNoColor>
+                text="Generate"
+            ></ButtonNoColor>
         </>
     );
 }
