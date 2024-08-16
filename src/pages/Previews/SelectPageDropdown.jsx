@@ -35,7 +35,7 @@ function SelectPageDropdown(props) {
                 )}
             </button>
             {isOpen && (
-                <div className="bg-[#2D2D2D] absolute flex flex-col w-36 p-2 text-white rounded-xl gap-4 pd-4 mt-4">
+                <div className="bg-[#2D2D2D] absolute flex flex-col w-36 p-2 text-white rounded-xl gap-4 pd-4 mt-4 z-[50]">
                     <button
                         className="hover:text-[#828282] rounded-md p-2 transition-all ease-in-out"
                         onClick={() => {
@@ -59,14 +59,6 @@ function SelectPageDropdown(props) {
                             setIsOpen(false);
                         }}>
                         Blog
-                    </button>
-                    <button
-                        className="hover:text-[#828282] rounded-md p-2 transition-all ease-in-out"
-                        onClick={() => {
-                            setPage("Shop");
-                            setIsOpen(false);
-                        }}>
-                        Shop
                     </button>
                 </div>
             )}

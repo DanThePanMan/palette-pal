@@ -3,6 +3,7 @@ import Header from "../components/Header.jsx";
 import Picker from "./Picker/Picker.jsx";
 import Landing from "./Landing/Landing.jsx";
 import PreviewIndex from "./Previews/PreviewIndex.jsx";
+import BootstrapIndex from "./Bootstrap/BootstrapIndex.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
 import Footer from "../components/Footer.jsx";
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     {
         path: "Preview",
         element: <PreviewIndex />,
+    },
+    {
+        path: "Bootstrap",
+        element: <BootstrapIndex />,
     },
 ]);
 
