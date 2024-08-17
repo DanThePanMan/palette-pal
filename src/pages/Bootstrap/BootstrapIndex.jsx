@@ -49,7 +49,7 @@ function BootstrapIndex() {
             <div className="flex flex-row gap-32">
                 <BootstrapPalette />
                 <div className="flex flex-col gap-6">
-                    <CodeSnippet />
+                    <CodeSnippet/>
                     <PaletteGenbtn
                         params={param}
                         codes={() => {}}
