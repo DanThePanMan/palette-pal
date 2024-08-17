@@ -32,7 +32,6 @@ function Header(props) {
                     <li><a href="" className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out">Upcoming Features</a></li>
                     <li><a className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out" onMouseEnter={dropdownEnter} >Tools</a>
                     </li>
-                    <li><a href="" className="text-[#2D2D2D] hover:text-[#828282] transition-all ease-in-out" >My Socials</a></li>
                 </ul>
             </nav>
 

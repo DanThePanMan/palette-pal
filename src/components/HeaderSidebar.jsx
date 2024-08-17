@@ -51,13 +51,6 @@ function HeaderSidebar(props) {
                                     Tools
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-white hover:text-[#828282] transition-all ease-in-out">
-                                    My Socials
-                                </a>
-                            </li>
                         </ul>
                     </nav>
                 </div>
