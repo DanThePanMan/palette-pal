@@ -4,6 +4,7 @@
         { "source": "/Picker", "destination": "/" },
         { "source": "/Preview", "destination": "/" },
         { "source": "/Bootstrap", "destination": "/" },
-        { "source": "/UpcomingFeatures", "destination": "/" }
+        { "source": "/UpcomingFeatures", "destination": "/" },
+        { "source": "/Custom", "destination": "/" }
     ]
 }

@@ -9,6 +9,7 @@ import React, { useState } from "react";
 import Footer from "../components/Footer.jsx";
 import HeaderSidebar from "../components/HeaderSidebar.jsx";
 import UpcomingFeatures from "../pages/UpcomingFeatures/UpcomingFeatures.jsx"
+import Custom from "./Custom/Custom.jsx";
 
 const paletteContext = createContext();
 
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
     {
         path: "UpcomingFeatures",
         element: <UpcomingFeatures />,
+    },
+    {
+        path: "Custom",
+        element: <Custom />,
     },
 ]);
 

@@ -121,6 +121,7 @@ function Landing() {
                         </p>
                         <div className="flex flex-row gap-2 lg:gap-5">
                             <ButtonDynamicColor
+                                link="/Custom"
                                 text="Use Your Own Palette"
                                 color={
                                     demoColors.mainBrand
