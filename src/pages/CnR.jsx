@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState } from "react";
 import Footer from "../components/Footer.jsx";
 import HeaderSidebar from "../components/HeaderSidebar.jsx";
+import UpcomingFeatures from "../pages/UpcomingFeatures/UpcomingFeatures.jsx"
 
 const paletteContext = createContext();
 
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
         element: <Landing />,
     },
     {
-        path: "picker",
+        path: "Picker",
         element: <Picker />,
     },
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
     {
         path: "Bootstrap",
         element: <BootstrapIndex />,
+    },
+    {
+        path: "UpcomingFeatures",
+        element: <UpcomingFeatures />,
     },
 ]);
 

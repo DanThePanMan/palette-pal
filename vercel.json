@@ -2,6 +2,8 @@
     "rewrites": [
         { "source": "/", "destination": "/" },
         { "source": "/Picker", "destination": "/" },
-        { "source": "/preview", "destination": "/" }
+        { "source": "/Preview", "destination": "/" },
+        { "source": "/Bootstrap", "destination": "/" },
+        { "source": "/UpcomingFeatures", "destination": "/" }
     ]
 }
