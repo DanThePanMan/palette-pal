@@ -4,11 +4,18 @@ import { paletteContext } from "../CnR";
 import { useContext, useEffect } from "react";
 import PaletteGenbtn from "../Picker/PaletteGenBtn";
 import SelectPageDropdown from "./SelectPageDropdown";
+import ButtonNoColor from "../../components/ButtonNoColor";
 
 
 function MiniPicker(props) {
     const [palette, setPalette] = useContext(paletteContext);
     const [models, setModels] = useState(["default"]);
+    const [allCodes, setAllCodes] = useState("Copy Codes");
+    async function getAllCodeshandler() {
+        setAllCodes("Code Copied");
+        const copiedText = JSON.stringify(palette);
+        await navigator.clipboard.writeText(copiedText);
+    }
 
     useEffect(() => {
         function fetchData(url) {
@@ -44,7 +51,11 @@ function MiniPicker(props) {
         <div className="bg-[#2D2D2D] sticky top-0 w-[100%] h-14 flex flex-row justify-center items-center gap-4">
             <p className="text-white font-medium text-lg">Currently Previewing:</p>
             <MiniPickerPalette></MiniPickerPalette>
-            <PaletteGenbtn params={param} codes={() => {}}></PaletteGenbtn>
+            <PaletteGenbtn params={param} codes={setAllCodes}></PaletteGenbtn>
+            <ButtonNoColor
+                    onClick={() => getAllCodeshandler()}
+                    text={allCodes}
+                ></ButtonNoColor>
             <SelectPageDropdown page={props.page} setPage={props.setPage}n/>
         </div>
     );
