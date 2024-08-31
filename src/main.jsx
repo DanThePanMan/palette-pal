@@ -6,13 +6,6 @@ import colors from "./assets/Colors.json";
 
 import "@fontsource-variable/inter"; // Defaults to wght axis
 
-export const metadata= {
-    title: "Palette Pal",
-    description: "Palette Preview Website for Developers",
-    verification: {
-        google: "hqFWAE_WkJ72t_igZExyr70EomLrstuM1Q9SHD7d5cI",
-    },
-};
 
 
 if (sessionStorage.getItem("defaultData") === null) {
