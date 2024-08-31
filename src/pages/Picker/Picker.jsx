@@ -57,7 +57,7 @@ function Picker() {
                     onClick={() => getAllCodeshandler()}
                     text={allCodes}
                 ></ButtonNoColor>
-                <a href="preview">
+                <a href="Preview">
                     <ButtonNoColor text="Preview"></ButtonNoColor>
                 </a>
             </div>
