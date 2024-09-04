@@ -11,6 +11,8 @@ function HeaderDropdown(props){
                 <li><div className=""><a href="/Picker" className="text-white hover:text-[#828282] transition-all ease-in-out" >Palette Generator</a></div></li>
                 <li><a href="/Preview" className="text-white hover:text-[#828282] transition-all ease-in-out" >Palete Preview</a></li>
                 <li><a href="/Bootstrap" className="text-white hover:text-[#828282] transition-all ease-in-out">Export to Bootstrap</a></li>
+                <li><a href="/Custom" className="text-white hover:text-[#828282] transition-all ease-in-out">Custom Palettes</a></li>
+
             </ul>
     </div>);
 }

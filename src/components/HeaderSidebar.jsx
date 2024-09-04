@@ -39,16 +39,30 @@ function HeaderSidebar(props) {
                         <ul className="flex flex-col justify-around gap-5 text-sm font-medium text-white">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/Picker"
                                     className="text-white hover:text-[#828282] transition-all ease-in-out">
-                                    Upcoming Features
+                                    Palette Generator
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/Preview"
                                     className="text-white hover:text-[#828282] transition-all ease-in-out">
-                                    Tools
+                                    Palette Preview
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/Bootstrap"
+                                    className="text-white hover:text-[#828282] transition-all ease-in-out">
+                                    Export to Bootstrap
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/Custom"
+                                    className="text-white hover:text-[#828282] transition-all ease-in-out">
+                                    Custom Palettes
                                 </a>
                             </li>
                         </ul>
