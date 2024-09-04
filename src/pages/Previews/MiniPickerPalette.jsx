@@ -17,7 +17,7 @@ function MiniPickerPalette(){
 
     return(
         <>
-        <div className=" w-[300px] h-10 bg-green-400 flex flex-col md:flex-row rounded-xl overflow-clip border-2 borde-[828282] relative">
+        <div className=" w-[300px] h-10 flex flex-row rounded-xl overflow-clip border-2 borde-[828282] relative">
             <div id = {0} className="w-[300px] h-10 transition-all ease-in-out" style={convertStyle(palette.lightShades)}></div>
             <div id = {1} className="w-[300px] h-10 transition-all ease-in-out" style={convertStyle(palette.lightAccent)}></div>
             <div id = {2} className="w-[300px] h-10 transition-all ease-in-out" style={convertStyle(palette.mainBrand)}></div>

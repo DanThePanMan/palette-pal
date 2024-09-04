@@ -13,10 +13,10 @@ function DashboardIndex() {
         <>
             <div
                 style={convertStyleDiv(palette.lightShades)}
-                className="w-[100%] h-screen grid grid-cols-3 grid-rows-4 gap-4 p-4 lg:p-32 xl:p-26 xl:pr-[38rem] xl:pl-[38rem] transition-all ease-in-out"
+                className="w-[100%] pt-64 pb-64 pl-5 r-5 sm:p-14 md:pr-8 md:pl-8 h-screen grid grid-cols-3 grid-rows-4 gap-4 xl:p-26 2xl:pr-[20vw] 2xl:pl-[20vw] transition-all ease-in-out"
             >
                 <div
-                    className="rounded-lg transition-all ease-in-out p-12 box-border flex flex-col gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p

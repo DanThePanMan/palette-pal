@@ -48,8 +48,8 @@ function MiniPicker(props) {
 
 
     return (
-        <div className="bg-[#2D2D2D] sticky top-0 w-[100%] h-14 flex flex-row justify-center items-center gap-4">
-            <p className="text-white font-medium text-lg">Currently Previewing:</p>
+        <div className="bg-[#2D2D2D] sticky top-0 w-[100%] h-14 flex flex-row justify-center items-center gap-0 md:gap-4 p-4 md:p-0">
+            <p className="text-white font-medium text-xs md:text-lg">Currently Previewing:</p>
             <MiniPickerPalette></MiniPickerPalette>
             <PaletteGenbtn params={param} codes={setAllCodes}></PaletteGenbtn>
             <ButtonNoColor
