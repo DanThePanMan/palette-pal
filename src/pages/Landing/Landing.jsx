@@ -104,7 +104,7 @@ function Landing() {
                     </div>
                     <div className="flex flex-col items-start gap-5 w-[80vw] mt-12 md:mt-0 md:w-[20vw]">
                         <span
-                            className="type-Landing font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                            className="type-Landing font-bold text-xl md:text-2xl xl:text-2xl 2xl:text-5xl transition-all ease-in-out h-auto xl:h-42"
                             style={convertStyle(demoColors.darkShades)}>
                             
                         </span>

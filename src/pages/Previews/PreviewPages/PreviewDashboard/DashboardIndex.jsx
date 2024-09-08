@@ -13,82 +13,82 @@ function DashboardIndex() {
         <>
             <div
                 style={convertStyleDiv(palette.lightShades)}
-                className="w-[100%] pt-64 pb-64 pl-5 r-5 sm:p-14 md:pr-8 md:pl-8 h-screen grid grid-cols-3 grid-rows-4 gap-4 xl:p-26 2xl:pr-[20vw] 2xl:pl-[20vw] transition-all ease-in-out"
+                className="w-[100%] pt-24 pb-24 pl-5 r-5 sm:p-14 md:pr-8 md:pl-8 h-screen grid grid-cols-3 grid-rows-4 gap-4 xl:p-26 2xl:pr-[20vw] 2xl:pl-[20vw] transition-all ease-in-out"
             >
                 <div
-                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-1 md:gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
+                        className="transition-all ease-in-out text-sm xl:text-lg"
                         style={convertStyleText(palette.darkShades)}
                     >
                         A Statistic
                     </p>
                     <h1
-                        className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                        className="font-bold text-lg md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                         style={convertStyleText(palette.darkShades)}
                     >
                         1500
                     </h1>
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2"
+                        className="transition-all ease-in-out text-xs md:text-sm xl:text-lg flex flex-col md:flex-row gap-2"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        <p className="text-lg md:text-sm xl:text-lg text-green-600">
+                        <p className="text-xs md:text-sm xl:text-lg text-green-600">
                             +24%
                         </p>
                         From Last Week
                     </p>
                 </div>
                 <div
-                    className="rounded-lg transition-all ease-in-out p-12 box-border flex flex-col gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-1 md:gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
+                        className="transition-all ease-in-out text-sm xl:text-lg"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        Another Statistic
+                        Statistic 2
                     </p>
                     <h1
-                        className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                        className="font-bold text-lg md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                         style={convertStyleText(palette.darkShades)}
                     >
                         32%
                     </h1>
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2"
+                        className="transition-all ease-in-out text-xs md:text-sm xl:text-lg flex flex-col md:flex-row gap-2"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        <p className="text-lg md:text-sm xl:text-lg text-red-600">
-                            -6%
+                        <p className="text-xs md:text-sm xl:text-lg text-red-600">
+                        -6%
                         </p>
                         From Last Week
                     </p>
                 </div>
                 <div
-                    className="rounded-lg transition-all ease-in-out p-12 box-border flex flex-col gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-1 md:gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
+                        className="transition-all ease-in-out text-sm xl:text-lg"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        Another Statistic
+                        Statistic 2
                     </p>
                     <h1
-                        className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                        className="font-bold text-lg md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        325GB
+                        422GB
                     </h1>
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2"
+                        className="transition-all ease-in-out text-xs md:text-sm xl:text-lg flex flex-col md:flex-row gap-2"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        <p className="text-lg md:text-sm xl:text-lg text-yellow-500">
-                            -0%
+                        <p className="text-xs md:text-sm xl:text-lg text-yellow-400">
+                        +0%
                         </p>
                         From Last Week
                     </p>
@@ -162,18 +162,18 @@ function DashboardIndex() {
                     </svg>
                 </div>
                 <div
-                    className="bg-red-200 row-span-3 rounded-lg transition-all ease-in-out p-12 flex flex-col gap-6"
+                    className="bg-red-200 row-span-3 rounded-lg transition-all ease-in-out p-2 lg:p-12 flex flex-col gap-2 md:gap-6"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
+                        className="transition-all ease-in-out text-xs md:text-sm xl:text-lg"
                         style={convertStyleText(palette.darkShades)}
                     >
                         Some Stats With Bars
                     </p>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             Instagram
@@ -190,7 +190,7 @@ function DashboardIndex() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             X
@@ -207,7 +207,7 @@ function DashboardIndex() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             Facebook
@@ -224,7 +224,7 @@ function DashboardIndex() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             Linkedin
@@ -241,7 +241,7 @@ function DashboardIndex() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             Reddit
@@ -258,7 +258,7 @@ function DashboardIndex() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             Tumblr
@@ -275,7 +275,7 @@ function DashboardIndex() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
-                            className="transition-all ease-in-out text-md md:text-sm xl:text-md"
+                            className="transition-all ease-in-out text-xs md:text-sm xl:text-md"
                             style={convertStyleText(palette.darkShades)}
                         >
                             Other
@@ -292,46 +292,46 @@ function DashboardIndex() {
                     </div>
                 </div>
                 <div
-                    className="col-span-2 rounded-lg transition-all ease-in-out flex flex-col gap-3 p-12 "
+                    className="col-span-2 rounded-lg transition-all ease-in-out flex flex-col gap-3 p-4 lg:p-12 "
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
-                        className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
+                        className="transition-all ease-in-out text-sm md:text-sm xl:text-lg"
                         style={convertStyleText(palette.darkShades)}
                     >
-                        Blalance
+                        Balance
                     </p>
                     <div className="flex flex-row justify-between ">
-                        <div className="flex flex-col gap-0 h-12">
+                        <div className="flex flex-col gap-2 h-12">
                             <h1
-                                className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                                className="font-bold text-xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                                 style={convertStyleText(palette.darkShades)}
                             >
                                 $325
                             </h1>
-                            <p className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2 text-red-600">
+                            <p className="transition-all ease-in-out text-xs md:text-sm xl:text-lg flex flex-row gap-2 text-red-600">
                                 Rejected
                             </p>
                         </div>
                         <div className="flex flex-col gap-2 h-12">
                             <h1
-                                className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                                className="font-bold text-xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                                 style={convertStyleText(palette.darkShades)}
                             >
                                 $984
                             </h1>
-                            <p className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2 text-yellow-500">
+                            <p className="transition-all ease-in-out text-xs md:text-sm xl:text-lg flex flex-row gap-2 text-yellow-500">
                                 Pending
                             </p>
                         </div>
                         <div className="flex flex-col gap-2 h-12">
                             <h1
-                                className="font-bold text-4xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
+                                className="font-bold text-xl md:text-2xl lg:text-3xl 2xl:text-5xl transition-all ease-in-out h-auto 2xl:h-48"
                                 style={convertStyleText(palette.darkShades)}
                             >
                                 $788
                             </h1>
-                            <p className="transition-all ease-in-out text-lg md:text-sm xl:text-lg flex flex-row gap-2 text-green-600">
+                            <p className="transition-all ease-in-out text-xs md:text-sm xl:text-lg flex flex-row gap-2 text-green-600">
                                 Available
                             </p>
                         </div>

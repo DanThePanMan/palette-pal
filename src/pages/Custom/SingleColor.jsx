@@ -20,7 +20,7 @@ function SingleColor(props) {
             <p className="text-lg font-medium text-[#828282]">{props.color}:</p>
             <div
                 id={0}
-                className="w-[300px] h-[430px] md:w-[150px] md:h-[430px] transition-all ease-in-out rounded-lg hover:opacity-55"
+                className="w-80 h-12 sm:w-80 sm:h-20 md:w-24 md:h-80 xl:w-[150px] xl:h-[430px] transition-all ease-in-out rounded-lg hover:opacity-55 border border-s-gray-200"
                 style={convertStyleDiv(palette[props.color])}
             >
                 <input
