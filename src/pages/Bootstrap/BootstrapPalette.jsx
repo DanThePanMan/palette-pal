@@ -7,45 +7,45 @@ function BootstrapPalette() {
     const [palette, setPalette] = useContext(paletteContext);
 
     return (
-        <div className="grid grid-cols-3 gap-6 w-[46rem]">
+        <div className="grid grid-cols-3 gap-6 w-[100%] md:w-[46rem]">
             <div
-                className="rounded-lg p-6 transition-all ease-in-out"
+                className="rounded-lg p-4 md:p-6 transition-all ease-in-out"
                 style={convertStyleDiv(palette.mainBrand)}
             >
-                <p style={convertStyleText(palette.lightShades)}>Primary</p>
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Primary</p>
             </div>
             <div
-                className="rounded-lg p-6 transition-all ease-in-out"
+                className="rounded-lg p-4 md:p-6 transition-all ease-in-out"
                 style={convertStyleDiv(palette.lightAccent)}
             >
-                <p style={convertStyleText(palette.lightShades)}>Secondary</p>
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Secondary</p>
             </div>
-            <div className="rounded-lg p-6 transition-all ease-in-out bg-green-600">
-                <p style={convertStyleText(palette.lightShades)}>Success</p>
+            <div className="rounded-lg p-4 md:p-6 transition-all ease-in-out bg-green-600">
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Success</p>
             </div>
-            <div className="rounded-lg p-6 transition-all ease-in-out bg-red-600">
-                <p style={convertStyleText(palette.lightShades)}>Danger</p>
+            <div className="rounded-lg p-4 md:p-6 transition-all ease-in-out bg-red-600">
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Danger</p>
             </div>
-            <div className="rounded-lg p-6 transition-all ease-in-out bg-yellow-500">
-                <p style={convertStyleText(palette.lightShades)}>Warning</p>
+            <div className="rounded-lg p-4 md:p-6 transition-all ease-in-out bg-yellow-500">
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Warning</p>
             </div>
             <div
-                className="rounded-lg p-6 transition-all ease-in-out"
+                className="rounded-lg p-4 md:p-6 transition-all ease-in-out"
                 style={convertStyleDiv(palette.darkAccent)}
             >
-                <p style={convertStyleText(palette.lightShades)}>Info</p>
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Info</p>
             </div>
             <div
-                className="rounded-lg p-6 transition-all ease-in-out"
+                className="rounded-lg p-4 md:p-6 transition-all ease-in-out"
                 style={convertStyleDiv(palette.lightShades)}
             >
-                <p style={convertStyleText(palette.darkShades)}>Light</p>
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.darkShades)}>Light</p>
             </div>
             <div
-                className="rounded-lg p-6 transition-all ease-in-out"
+                className="rounded-lg p-4 md:p-6 transition-all ease-in-out"
                 style={convertStyleDiv(palette.darkShades)}
             >
-                <p style={convertStyleText(palette.lightShades)}>Dark</p>
+                <p className="text-xs md:text-lg" style={convertStyleText(palette.lightShades)}>Dark</p>
             </div>
         </div>
     );

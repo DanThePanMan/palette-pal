@@ -37,7 +37,7 @@ function BootstrapIndex() {
     }, [palette]);
 
     return (
-        <div className="w-100% h-[calc(100vh-16rem)] flex flex-col justify-start items-center gap-32 p-20">
+        <div className="w-[100%] flex flex-col justify-start items-center gap-32 p-8 lg:p-20">
             <div className="flex flex-col gap-4">
                 <h1 className="font-bold text-xl md:text-3xl xl:text-5xl ">
                     Export to Bootstrap
@@ -46,7 +46,7 @@ function BootstrapIndex() {
                     Generate colors for the bootstrap color utility classes
                 </p>
             </div>
-            <div className="flex flex-row gap-32">
+            <div className="flex flex-col lg:flex-row gap-32">
                 <BootstrapPalette />
                 <div className="flex flex-col gap-6">
                     <CodeSnippet/>

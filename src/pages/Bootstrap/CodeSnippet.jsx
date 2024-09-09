@@ -27,7 +27,7 @@ function CodeSnippet() {
     );
 
     return (
-        <div className="bg-[#b6b6b6] w-96 h-96 rounded-lg p-8 flex flex-col justify-between">
+        <div className="bg-[#b6b6b6] w-auto lg:w-96 h-96 rounded-lg p-8 flex flex-col justify-between">
             <div>
                 <p>$theme-colors: (</p>
                 <p> &emsp; "secondary": {`rgb(${palette.lightAccent[0]}, ${palette.lightAccent[1]}, ${palette.lightAccent[2]})`},</p>
