@@ -16,7 +16,7 @@ function DashboardIndex() {
                 className="w-[100%] pt-24 pb-24 pl-5 r-5 sm:p-14 md:pr-8 md:pl-8 h-screen grid grid-cols-3 grid-rows-4 gap-4 xl:p-26 2xl:pr-[20vw] 2xl:pl-[20vw] transition-all ease-in-out"
             >
                 <div
-                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-1 md:gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 3xl:p-12 box-border flex flex-col gap-1 md:gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
@@ -42,7 +42,7 @@ function DashboardIndex() {
                     </p>
                 </div>
                 <div
-                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-1 md:gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 3xl:p-12 box-border flex flex-col gap-1 md:gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
@@ -68,7 +68,7 @@ function DashboardIndex() {
                     </p>
                 </div>
                 <div
-                    className="rounded-lg transition-all ease-in-out p-4 md:p-12 box-border flex flex-col gap-1 md:gap-3"
+                    className="rounded-lg transition-all ease-in-out p-4 3xl:p-12 box-border flex flex-col gap-1 md:gap-3"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
@@ -94,7 +94,7 @@ function DashboardIndex() {
                     </p>
                 </div>
                 <div
-                    className="row-span-2 col-span-2 rounded-lg transition-all ease-in-out flex flex-col justify-start items-center p-12 gap-12"
+                    className="row-span-2 col-span-2 rounded-lg transition-all ease-in-out flex flex-col justify-start items-center p-4 3xl:p-12 gap-12"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
@@ -162,7 +162,7 @@ function DashboardIndex() {
                     </svg>
                 </div>
                 <div
-                    className="bg-red-200 row-span-3 rounded-lg transition-all ease-in-out p-2 lg:p-12 flex flex-col gap-2 md:gap-6"
+                    className="bg-red-200 row-span-3 rounded-lg transition-all ease-in-out p-2 3xl:p-12 flex flex-col gap-2 3xl:gap-6"
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
@@ -292,7 +292,7 @@ function DashboardIndex() {
                     </div>
                 </div>
                 <div
-                    className="col-span-2 rounded-lg transition-all ease-in-out flex flex-col gap-3 p-4 lg:p-12 "
+                    className="col-span-2 rounded-lg transition-all ease-in-out flex flex-col gap-3 p-4 3xl:p-12 "
                     style={convertStyleDiv(palette.lightAccent)}
                 >
                     <p
