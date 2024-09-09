@@ -10,7 +10,7 @@ function BlogNav() {
             className="w-[100%] flex items-center justify-center pt-24 p-8"
             style={convertStyleDiv(palette.lightShades)}
         >
-            <div className="container w-[45vw] h-6 flex flex-row justify-between items-center">
+            <div className="container w-[100%] lg:w-[60vw] 3xl:w-[45vw] h-6 flex flex-row justify-between items-center">
                 <div className="leftCluster flex flex-row gap-4">
                     <button
                         className="navButton p-1 pl-2 pr-2 rounded-sm hover:opacity-80 transition-all ease-in-out"
@@ -58,7 +58,7 @@ function BlogNav() {
                     </button>
                 </div>
                 <div
-                        className="flex flex-row items-center justify-start gap-2 pr-2 pl-4 h-12 rounded-sm"
+                        className="hidden md:flex flex-row items-center justify-start gap-2 pr-2 pl-4 h-12 rounded-sm"
                         style={convertStyleDiv(palette.lightShades)}
                     >
                         <input

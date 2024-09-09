@@ -12,7 +12,7 @@ function BottomTwo() {
     const [palette, setPalette] = useContext(paletteContext);
 
     return (
-        <div className="flex flex-row gap-2 justify-between w-[45vw] pt-16 pb-16">
+        <div className="flex flex-col md:flex-row gap-2 justify-between w-[100%] lg:w-[60vw] 3xl:w-[45vw] pt-16 pb-16">
             <div className="flex flex-col gap-2">
                 <img
                     src={code}

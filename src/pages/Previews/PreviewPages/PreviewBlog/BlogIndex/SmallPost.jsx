@@ -10,8 +10,8 @@ function SmallPost(props) {
     const [palette, setPalette] = useContext(paletteContext);
 
     return (
-        <div className="flex flex-col gap-2 w-56">
-            <img src={img} className="w-56 h-56 object-cover rounded-sm"></img>
+        <div className="flex flex-col gap-2 w-auto md:w-56">
+            <img src={img} className="md:w-56 md:h-56 object-cover rounded-sm"></img>
             <p style={convertStyleText(palette.darkShades)} className="text-xs">
                 {credit}
             </p>

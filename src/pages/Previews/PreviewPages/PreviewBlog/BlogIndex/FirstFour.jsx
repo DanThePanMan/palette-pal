@@ -14,7 +14,7 @@ function FirstFour() {
 
     return (
         <div
-            className="flex flex-row justify-between w-[45vw] pt-4"
+            className="flex flex-col items-center gap-12 md:flex-row justify-between w-[100%] lg:w-[60vw] 3xl:w-[45vw] pt-4"
             style={convertStyleDiv(palette.lightShades)}
         >
             <SmallPost
