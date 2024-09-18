@@ -25,6 +25,7 @@ function SingleColor(props) {
             >
                 <input
                     type="color"
+                    
                     value={color}
                     onChange={(e) => {
                         setColor(e.target.value);
@@ -36,7 +37,7 @@ function SingleColor(props) {
                             JSON.stringify(palette)
                         );
                     }}
-                    className="opacity-0 w-[300px] h-[430px] md:w-[150px] md:h-[430px]"
+                    className="opacity-0 w-80 h-12 sm:w-80 sm:h-20 md:w-24 md:h-80 xl:w-[150px] xl:h-[430px]"
                 />
             </div>
         </div>
