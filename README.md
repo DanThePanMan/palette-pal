@@ -1,17 +1,13 @@
-
 <h1 align="center" style="font-weight: bold;">Palette Pal </h1>
 
 <p align="center">
-<a href="#tech">Technologies</a>
-<a href="#features">Features</a>
-<a href="#started">Getting Started</a>
+<a href="#tech">Technologies</a> •
+<a href="#features">Features</a> •
+<a href="#started">Getting Started</a> •
 <a href="#contribute">Contribute</a> 
 </p>
 
-
 <p align="center">A powerful tool for designers and engineers to effortlessly generate, customize, and test color palettes directly on website templates.</p>
-
-
 
 <p align="center">
 <a href="https://palettepal.vercel.app/">Click here to check it out!</a>
@@ -20,9 +16,8 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-
-<img src="https://i.imgur.com/AH5SEbG.png[/img" alt="Palette Generator" width="400px">
-<img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px">
+<img src="https://i.imgur.com/AH5SEbG.png" alt="Palette Generator" height="300px">
+<img src="https://i.imgur.com/5Ny7NE0.png" alt="Palette Preview" height="300px">
 </p>
 
 <h2 id="tech">📝 Technology</h2>
