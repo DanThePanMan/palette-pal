@@ -103,11 +103,13 @@ function Landing() {
                         </div>
                     </div>
                     <div className="flex flex-col items-start gap-5 w-[80vw] mt-12 md:mt-0 md:w-[20vw]">
-                        <span
-                            className="type-Landing font-bold text-xl md:text-2xl xl:text-2xl 2xl:text-5xl transition-all ease-in-out h-auto xl:h-42"
-                            style={convertStyle(demoColors.darkShades)}>
-                            
-                        </span>
+                        <div className="h-[130px] md:h-[130px] xl:h-[180px] 2xl:h-[180px]">
+                            <span
+                                className="type-Landing font-bold text-xl md:text-2xl xl:text-2xl 2xl:text-5xl transition-all ease-in-out h-auto xl:h-42"
+                                style={convertStyle(demoColors.darkShades)}>
+
+                            </span>
+                        </div>
                         <p
                             className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
                             style={convertStyle(demoColors.lightAccent)}>
@@ -239,7 +241,7 @@ function Landing() {
                                 style={convertStyle(demoColors.lightAccent)}>
                                 Checkout my other projects on my{" "}
                                 <a className="underline" href="https://github.com/DanThePanMan/">Github</a> or my{" "}
-                                <a className="underline" onClick={() => {alert("The Personal Website is Under Construction!")}}>personal website</a>.
+                                <a className="underline" onClick={() => { alert("The Personal Website is Under Construction!") }}>personal website</a>.
                             </p>
                         </div>
                     </div>

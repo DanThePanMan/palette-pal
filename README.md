@@ -21,15 +21,15 @@
 
 <p align="center">
 
-<img src="https://i.imgur.com/AH5SEbG.png[/img" alt="Palette Generator" width="400px">
-<img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px">
+<img src="https://i.imgur.com/AH5SEbG.png" alt="Palette Generator" width="400px" height="300px">
+<img src="https://i.imgur.com/5Ny7NE0.png" alt="Palette Preview" width="400px" height="300px">
 </p>
 
 <h2 id="tech">📝 Technology</h2>
 
-- Built using React JS with vite
+- Built using ReactJS with Vite
 - Styled with Tailwind CSS
-- Palette Generation Powered by <a href="http://colormind.io/">Colormind</a>
+- Palette generation powered by <a href="http://colormind.io/">Colormind</a>
 - Deployed with Vercel
 
 
@@ -37,7 +37,7 @@
 
 - Effortlessly generates colour palettes via Colormind
 - Preview these palettes on your page by applyin them to various website templates
-- Apply these palettes to your website through bootstrap or tailwindCSS
+- Apply these palettes to your website through Bootstrap or Tailwind CSS
 
 <h2 id="started">🚀 Getting started</h2>
 
