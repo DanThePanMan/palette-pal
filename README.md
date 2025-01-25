@@ -21,8 +21,8 @@
 
 <p align="center">
 
-<img src="https://i.imgur.com/AH5SEbG.png[/img" alt="Palette Generator" width="400px">
-<img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px">
+<img src="https://i.imgur.com/AH5SEbG.png[/img" alt="Palette Generator" width="400px" height="300px">
+<img src="https://i.imgur.com/5Ny7NE0.png[/img" alt="Palette Preview" width="400px" height="300px">
 </p>
 
 <h2 id="tech">📝 Technology</h2>
