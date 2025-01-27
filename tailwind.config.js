@@ -11,8 +11,8 @@ export default {
                     words: ["A Free Color Palette Preview Tool for Developers"],
                     delay: 1,
                     writeSpeed: 0.06,
-                    eraseSpeed: 0,
-                    repeat:0
+                    eraseSpeed: 0.06,
+                    repeat:-1
                 },
             },
         }),
