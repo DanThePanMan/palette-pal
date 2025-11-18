@@ -1,19 +1,51 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useCallback } from "react"; 
 import { convertStyleDiv } from "../Previews/Convert";
-import { paletteContext } from "../CnR";
+import { paletteContext } from "../CnR"; 
+
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const context = this;
+        const later = () => {
+            timeout = null;
+            func.apply(context, args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
 
 function SingleColor(props) {
     const [palette, setPalette] = useContext(paletteContext);
     const [color, setColor] = useState("#ffffff");
 
-    function hexToRgb(hex) {
-        hex = hex.replace(/^#/, "");
-        let r = parseInt(hex.substring(0, 2), 16);
-        let g = parseInt(hex.substring(2, 4), 16);
-        let b = parseInt(hex.substring(4, 6), 16);
+    const debouncedSave = useCallback(
+        debounce((newPalette) => {
+            setPalette(newPalette);
+            sessionStorage.setItem(
+                "defaultData",
+                JSON.stringify(newPalette)
+            );
+        }, 300),
+        [setPalette]
+    );
 
-        return [r, g, b];
-    }
+    const handleChange = (e) => {
+        const newHexColor = e.target.value;
+        setColor(newHexColor);
+        const tempPalette = { ...palette }; 
+        tempPalette[props.color] = hexToRgb(newHexColor);
+        debouncedSave(tempPalette);
+};
+
+function hexToRgb(hex) {
+    hex = hex.replace(/^#/, "");
+    let r = parseInt(hex.substring(0, 2), 16);
+    let g = parseInt(hex.substring(2, 4), 16);
+    let b = parseInt(hex.substring(4, 6), 16);
+  
+    return [r, g, b];
+}
 
     return (
         <div className="flex flex-col gap-2">
@@ -25,18 +57,9 @@ function SingleColor(props) {
             >
                 <input
                     type="color"
-                    
+
                     value={color}
-                    onChange={(e) => {
-                        setColor(e.target.value);
-                        let tempPalette = palette;
-                        tempPalette[props.color] = hexToRgb(color);
-                        setPalette(tempPalette);
-                        sessionStorage.setItem(
-                            "defaultData",
-                            JSON.stringify(palette)
-                        );
-                    }}
+                    onChange={handleChange} 
                     className="opacity-0 w-80 h-12 sm:w-80 sm:h-20 md:w-24 md:h-80 xl:w-[150px] xl:h-[430px]"
                 />
             </div>
