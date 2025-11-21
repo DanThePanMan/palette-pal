@@ -102,13 +102,14 @@ function Landing() {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col items-start gap-5 w-[80vw] mt-12 md:mt-0 md:w-[20vw]">
-                        <div className="h-[130px] md:h-[130px] xl:h-[180px] 2xl:h-[180px]">
-                            <span
-                                className="type-Landing font-bold text-xl md:text-2xl xl:text-2xl 2xl:text-5xl transition-all ease-in-out h-auto xl:h-42"
-                                style={convertStyle(demoColors.darkShades)}>
+                    <div className="flex flex-col items-start gap-5 w-full md:w-[28vw] lg:w-[25vw] xl:w-[22vw] mt-12 md:mt-0">
 
-                            </span>
+
+                        <div className="min-h-[130px] md:min-h-[130px] xl:min-h-[180px] h-auto">
+                            <span
+                                className="type-Landing font-bold text-xl md:text-2xl xl:text-2xl 2xl:text-5xl transition-all ease-in-out overflow-visible break-words"
+                                style={convertStyle(demoColors.darkShades)}
+                            ></span>
                         </div>
                         <p
                             className="transition-all ease-in-out text-lg md:text-sm xl:text-lg"
